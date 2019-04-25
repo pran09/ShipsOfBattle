@@ -1,0 +1,597 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		720B100D22712FD800CB2CB9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 720B100C22712FD800CB2CB9 /* AppDelegate.swift */; };
+		720B100F22712FD800CB2CB9 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 720B100E22712FD800CB2CB9 /* GameScene.sks */; };
+		720B101122712FD800CB2CB9 /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = 720B101022712FD800CB2CB9 /* Actions.sks */; };
+		720B101322712FD800CB2CB9 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 720B101222712FD800CB2CB9 /* GameScene.swift */; };
+		720B101522712FD800CB2CB9 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 720B101422712FD800CB2CB9 /* GameViewController.swift */; };
+		720B101822712FD800CB2CB9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 720B101622712FD800CB2CB9 /* Main.storyboard */; };
+		720B101A22712FDB00CB2CB9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 720B101922712FDB00CB2CB9 /* Assets.xcassets */; };
+		720B101D22712FDB00CB2CB9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 720B101B22712FDB00CB2CB9 /* LaunchScreen.storyboard */; };
+		720B102822712FDC00CB2CB9 /* ShipsOfBattleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 720B102722712FDC00CB2CB9 /* ShipsOfBattleTests.swift */; };
+		720B103322712FDC00CB2CB9 /* ShipsOfBattleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 720B103222712FDC00CB2CB9 /* ShipsOfBattleUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		720B102422712FDC00CB2CB9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 720B100122712FD800CB2CB9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 720B100822712FD800CB2CB9;
+			remoteInfo = ShipsOfBattle;
+		};
+		720B102F22712FDC00CB2CB9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 720B100122712FD800CB2CB9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 720B100822712FD800CB2CB9;
+			remoteInfo = ShipsOfBattle;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		720B100922712FD800CB2CB9 /* ShipsOfBattle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShipsOfBattle.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		720B100C22712FD800CB2CB9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		720B100E22712FD800CB2CB9 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
+		720B101022712FD800CB2CB9 /* Actions.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Actions.sks; sourceTree = "<group>"; };
+		720B101222712FD800CB2CB9 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
+		720B101422712FD800CB2CB9 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		720B101722712FD800CB2CB9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		720B101922712FDB00CB2CB9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		720B101C22712FDB00CB2CB9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		720B101E22712FDB00CB2CB9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		720B102322712FDC00CB2CB9 /* ShipsOfBattleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ShipsOfBattleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		720B102722712FDC00CB2CB9 /* ShipsOfBattleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShipsOfBattleTests.swift; sourceTree = "<group>"; };
+		720B102922712FDC00CB2CB9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		720B102E22712FDC00CB2CB9 /* ShipsOfBattleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ShipsOfBattleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		720B103222712FDC00CB2CB9 /* ShipsOfBattleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShipsOfBattleUITests.swift; sourceTree = "<group>"; };
+		720B103422712FDC00CB2CB9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		720B100622712FD800CB2CB9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		720B102022712FDC00CB2CB9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		720B102B22712FDC00CB2CB9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		720B100022712FD800CB2CB9 = {
+			isa = PBXGroup;
+			children = (
+				720B100B22712FD800CB2CB9 /* ShipsOfBattle */,
+				720B102622712FDC00CB2CB9 /* ShipsOfBattleTests */,
+				720B103122712FDC00CB2CB9 /* ShipsOfBattleUITests */,
+				720B100A22712FD800CB2CB9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		720B100A22712FD800CB2CB9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				720B100922712FD800CB2CB9 /* ShipsOfBattle.app */,
+				720B102322712FDC00CB2CB9 /* ShipsOfBattleTests.xctest */,
+				720B102E22712FDC00CB2CB9 /* ShipsOfBattleUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		720B100B22712FD800CB2CB9 /* ShipsOfBattle */ = {
+			isa = PBXGroup;
+			children = (
+				720B100C22712FD800CB2CB9 /* AppDelegate.swift */,
+				720B100E22712FD800CB2CB9 /* GameScene.sks */,
+				720B101022712FD800CB2CB9 /* Actions.sks */,
+				720B101222712FD800CB2CB9 /* GameScene.swift */,
+				720B101422712FD800CB2CB9 /* GameViewController.swift */,
+				720B101622712FD800CB2CB9 /* Main.storyboard */,
+				720B101922712FDB00CB2CB9 /* Assets.xcassets */,
+				720B101B22712FDB00CB2CB9 /* LaunchScreen.storyboard */,
+				720B101E22712FDB00CB2CB9 /* Info.plist */,
+			);
+			path = ShipsOfBattle;
+			sourceTree = "<group>";
+		};
+		720B102622712FDC00CB2CB9 /* ShipsOfBattleTests */ = {
+			isa = PBXGroup;
+			children = (
+				720B102722712FDC00CB2CB9 /* ShipsOfBattleTests.swift */,
+				720B102922712FDC00CB2CB9 /* Info.plist */,
+			);
+			path = ShipsOfBattleTests;
+			sourceTree = "<group>";
+		};
+		720B103122712FDC00CB2CB9 /* ShipsOfBattleUITests */ = {
+			isa = PBXGroup;
+			children = (
+				720B103222712FDC00CB2CB9 /* ShipsOfBattleUITests.swift */,
+				720B103422712FDC00CB2CB9 /* Info.plist */,
+			);
+			path = ShipsOfBattleUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		720B100822712FD800CB2CB9 /* ShipsOfBattle */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 720B103722712FDC00CB2CB9 /* Build configuration list for PBXNativeTarget "ShipsOfBattle" */;
+			buildPhases = (
+				720B100522712FD800CB2CB9 /* Sources */,
+				720B100622712FD800CB2CB9 /* Frameworks */,
+				720B100722712FD800CB2CB9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ShipsOfBattle;
+			productName = ShipsOfBattle;
+			productReference = 720B100922712FD800CB2CB9 /* ShipsOfBattle.app */;
+			productType = "com.apple.product-type.application";
+		};
+		720B102222712FDC00CB2CB9 /* ShipsOfBattleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 720B103A22712FDC00CB2CB9 /* Build configuration list for PBXNativeTarget "ShipsOfBattleTests" */;
+			buildPhases = (
+				720B101F22712FDC00CB2CB9 /* Sources */,
+				720B102022712FDC00CB2CB9 /* Frameworks */,
+				720B102122712FDC00CB2CB9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				720B102522712FDC00CB2CB9 /* PBXTargetDependency */,
+			);
+			name = ShipsOfBattleTests;
+			productName = ShipsOfBattleTests;
+			productReference = 720B102322712FDC00CB2CB9 /* ShipsOfBattleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		720B102D22712FDC00CB2CB9 /* ShipsOfBattleUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 720B103D22712FDC00CB2CB9 /* Build configuration list for PBXNativeTarget "ShipsOfBattleUITests" */;
+			buildPhases = (
+				720B102A22712FDC00CB2CB9 /* Sources */,
+				720B102B22712FDC00CB2CB9 /* Frameworks */,
+				720B102C22712FDC00CB2CB9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				720B103022712FDC00CB2CB9 /* PBXTargetDependency */,
+			);
+			name = ShipsOfBattleUITests;
+			productName = ShipsOfBattleUITests;
+			productReference = 720B102E22712FDC00CB2CB9 /* ShipsOfBattleUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		720B100122712FD800CB2CB9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = trey;
+				TargetAttributes = {
+					720B100822712FD800CB2CB9 = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+					720B102222712FDC00CB2CB9 = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = 720B100822712FD800CB2CB9;
+					};
+					720B102D22712FDC00CB2CB9 = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = 720B100822712FD800CB2CB9;
+					};
+				};
+			};
+			buildConfigurationList = 720B100422712FD800CB2CB9 /* Build configuration list for PBXProject "ShipsOfBattle" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 720B100022712FD800CB2CB9;
+			productRefGroup = 720B100A22712FD800CB2CB9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				720B100822712FD800CB2CB9 /* ShipsOfBattle */,
+				720B102222712FDC00CB2CB9 /* ShipsOfBattleTests */,
+				720B102D22712FDC00CB2CB9 /* ShipsOfBattleUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		720B100722712FD800CB2CB9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				720B101822712FD800CB2CB9 /* Main.storyboard in Resources */,
+				720B100F22712FD800CB2CB9 /* GameScene.sks in Resources */,
+				720B101A22712FDB00CB2CB9 /* Assets.xcassets in Resources */,
+				720B101D22712FDB00CB2CB9 /* LaunchScreen.storyboard in Resources */,
+				720B101122712FD800CB2CB9 /* Actions.sks in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		720B102122712FDC00CB2CB9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		720B102C22712FDC00CB2CB9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		720B100522712FD800CB2CB9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				720B101322712FD800CB2CB9 /* GameScene.swift in Sources */,
+				720B101522712FD800CB2CB9 /* GameViewController.swift in Sources */,
+				720B100D22712FD800CB2CB9 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		720B101F22712FDC00CB2CB9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				720B102822712FDC00CB2CB9 /* ShipsOfBattleTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		720B102A22712FDC00CB2CB9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				720B103322712FDC00CB2CB9 /* ShipsOfBattleUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		720B102522712FDC00CB2CB9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 720B100822712FD800CB2CB9 /* ShipsOfBattle */;
+			targetProxy = 720B102422712FDC00CB2CB9 /* PBXContainerItemProxy */;
+		};
+		720B103022712FDC00CB2CB9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 720B100822712FD800CB2CB9 /* ShipsOfBattle */;
+			targetProxy = 720B102F22712FDC00CB2CB9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		720B101622712FD800CB2CB9 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				720B101722712FD800CB2CB9 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		720B101B22712FDB00CB2CB9 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				720B101C22712FDB00CB2CB9 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		720B103522712FDC00CB2CB9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		720B103622712FDC00CB2CB9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		720B103822712FDC00CB2CB9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ShipsOfBattle/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = trey.ShipsOfBattle;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		720B103922712FDC00CB2CB9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ShipsOfBattle/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = trey.ShipsOfBattle;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		720B103B22712FDC00CB2CB9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ShipsOfBattleTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = trey.ShipsOfBattleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ShipsOfBattle.app/ShipsOfBattle";
+			};
+			name = Debug;
+		};
+		720B103C22712FDC00CB2CB9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ShipsOfBattleTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = trey.ShipsOfBattleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ShipsOfBattle.app/ShipsOfBattle";
+			};
+			name = Release;
+		};
+		720B103E22712FDC00CB2CB9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ShipsOfBattleUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = trey.ShipsOfBattleUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ShipsOfBattle;
+			};
+			name = Debug;
+		};
+		720B103F22712FDC00CB2CB9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ShipsOfBattleUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = trey.ShipsOfBattleUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ShipsOfBattle;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		720B100422712FD800CB2CB9 /* Build configuration list for PBXProject "ShipsOfBattle" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				720B103522712FDC00CB2CB9 /* Debug */,
+				720B103622712FDC00CB2CB9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		720B103722712FDC00CB2CB9 /* Build configuration list for PBXNativeTarget "ShipsOfBattle" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				720B103822712FDC00CB2CB9 /* Debug */,
+				720B103922712FDC00CB2CB9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		720B103A22712FDC00CB2CB9 /* Build configuration list for PBXNativeTarget "ShipsOfBattleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				720B103B22712FDC00CB2CB9 /* Debug */,
+				720B103C22712FDC00CB2CB9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		720B103D22712FDC00CB2CB9 /* Build configuration list for PBXNativeTarget "ShipsOfBattleUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				720B103E22712FDC00CB2CB9 /* Debug */,
+				720B103F22712FDC00CB2CB9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 720B100122712FD800CB2CB9 /* Project object */;
+}

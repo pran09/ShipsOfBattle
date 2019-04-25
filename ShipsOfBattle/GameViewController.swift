@@ -12,9 +12,12 @@ import GameplayKit
 
 class GameViewController: UIViewController {
 
+    @IBOutlet weak var playButton: UIButton!
+    @IBOutlet weak var rulesButton: UIButton!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         if let view = self.view as! SKView? {
             // Load the SKScene from 'GameScene.sks'
             if let scene = SKScene(fileNamed: "GameScene") {
@@ -35,7 +38,11 @@ class GameViewController: UIViewController {
     override var shouldAutorotate: Bool {
         return true
     }
-
+    
+    @IBAction func pressedPlayButton(_ sender: Any) {
+        
+    }
+    
     override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
         if UIDevice.current.userInterfaceIdiom == .phone {
             return .allButUpsideDown

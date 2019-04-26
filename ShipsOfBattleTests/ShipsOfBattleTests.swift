@@ -7,7 +7,7 @@
 //
 
 import XCTest
-@testable import ShipsOfBattle
+//@testable import ShipsOfBattle
 
 class ShipsOfBattleTests: XCTestCase {
 

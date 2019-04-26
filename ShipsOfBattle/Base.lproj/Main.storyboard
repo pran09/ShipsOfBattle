@@ -10,10 +10,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Game View Controller-->
         <scene sceneID="OZs-OL-RIw">
             <objects>
-                <viewController id="Vy5-s5-Zpc" sceneMemberID="viewController">
+                <viewController id="Vy5-s5-Zpc" customClass="GameViewController" customModule="ShipsOfBattle" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="XPB-7n-bKi">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -25,7 +25,16 @@
                                 <state key="normal" title="Rules">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <segue destination="MfC-of-yKc" kind="presentation" id="WmI-vW-B2r"/>
+                                </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ships of Battle" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AbK-ep-Kwj">
+                                <rect key="frame" x="34" y="97" width="307" height="60"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0FD-5a-Abd">
                                 <rect key="frame" x="137" y="458" width="101" height="51"/>
                                 <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -38,12 +47,6 @@
                                     <segue destination="92Y-KX-70L" kind="show" id="cnd-eX-Jem"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ships of Battle" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AbK-ep-Kwj">
-                                <rect key="frame" x="34" y="97" width="307" height="60"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="50"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.58072251080000004" green="0.066734083" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -70,13 +73,153 @@
                     <view key="view" contentMode="scaleToFill" id="tOa-0L-m4n">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Connect to another user with Game Center" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tlP-co-6h0">
+                                <rect key="frame" x="16" y="109" width="343" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="k6N-7D-FbQ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lee-6M-6ca">
+                                <rect key="frame" x="137" y="635" width="101" height="51"/>
+                                <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                <state key="normal" title="Start">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="0.58072251080000004" green="0.066734083" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="tlP-co-6h0" firstAttribute="top" secondItem="7tZ-CC-UKj" secondAttribute="top" constant="65" id="CI2-nY-iY2"/>
+                            <constraint firstItem="7tZ-CC-UKj" firstAttribute="bottom" secondItem="Lee-6M-6ca" secondAttribute="bottom" constant="92" id="Da1-Hi-PBY"/>
+                            <constraint firstItem="tlP-co-6h0" firstAttribute="leading" secondItem="tOa-0L-m4n" secondAttribute="leadingMargin" id="KdY-06-WeT"/>
+                            <constraint firstItem="tlP-co-6h0" firstAttribute="centerX" secondItem="Lee-6M-6ca" secondAttribute="centerX" id="fOT-LD-DnM"/>
+                            <constraint firstItem="tlP-co-6h0" firstAttribute="trailing" secondItem="tOa-0L-m4n" secondAttribute="trailingMargin" id="fXV-3j-LYg"/>
+                            <constraint firstItem="Lee-6M-6ca" firstAttribute="leading" secondItem="7tZ-CC-UKj" secondAttribute="leading" constant="137" id="g3U-Gr-mEa"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="7tZ-CC-UKj"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gKw-dO-Hrb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1727" y="20"/>
+            <point key="canvasLocation" x="1725.5999999999999" y="19.95073891625616"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="xAu-Jb-ove">
+            <objects>
+                <viewController id="MfC-of-yKc" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="vsY-lJ-VOZ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="- 2 players" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TsX-o7-Scp">
+                                <rect key="frame" x="16" y="158" width="343" height="71"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="71" id="iZ3-wh-mCM"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="- Sink all of your opponent's ships" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZDE-cv-T2p">
+                                <rect key="frame" x="16" y="237" width="343" height="71"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="71" id="vHx-av-HDZ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="- Each player places all ships on the grid" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jzu-So-5Yb">
+                                <rect key="frame" x="16" y="316" width="343" height="71"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="71" id="b8i-wj-5BP"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="- Take turns firing 5 shots at your opponent's ships" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P5k-Wf-GYZ">
+                                <rect key="frame" x="16" y="395" width="343" height="71"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="71" id="2Ib-Mv-Unt"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="- Red dot signals a hit, white dot signals a miss" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Gc-1R-xJU">
+                                <rect key="frame" x="16" y="474" width="343" height="71"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="71" id="X7X-7k-hAJ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="- Play until one player's ships are all destroyed" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pZA-ds-jqU">
+                                <rect key="frame" x="16" y="553" width="348" height="71"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="71" id="jH7-2g-i1u"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rules" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mnd-PM-bW7">
+                                <rect key="frame" x="147" y="109" width="81" height="41"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="34"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J8h-GC-sLu">
+                                <rect key="frame" x="137" y="666" width="101" height="51"/>
+                                <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                <state key="normal" title="Close">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Vy5-s5-Zpc" kind="presentation" id="mAU-6X-OC8"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.58072251080000004" green="0.066734083" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="J8h-GC-sLu" firstAttribute="centerX" secondItem="4Gc-1R-xJU" secondAttribute="centerX" id="2V8-qi-tKd"/>
+                            <constraint firstItem="TsX-o7-Scp" firstAttribute="top" secondItem="mnd-PM-bW7" secondAttribute="bottom" constant="8" symbolic="YES" id="2lf-5D-GcQ"/>
+                            <constraint firstItem="mnd-PM-bW7" firstAttribute="centerX" secondItem="vsY-lJ-VOZ" secondAttribute="centerX" id="2xa-yg-7oN"/>
+                            <constraint firstItem="J8h-GC-sLu" firstAttribute="leading" secondItem="1bW-x7-E1s" secondAttribute="leading" constant="137" id="3uZ-xv-NP1"/>
+                            <constraint firstItem="4Gc-1R-xJU" firstAttribute="leading" secondItem="pZA-ds-jqU" secondAttribute="leading" id="8HT-dE-drw"/>
+                            <constraint firstItem="ZDE-cv-T2p" firstAttribute="top" secondItem="TsX-o7-Scp" secondAttribute="bottom" constant="8" symbolic="YES" id="BHb-vS-pgw"/>
+                            <constraint firstItem="mnd-PM-bW7" firstAttribute="centerX" secondItem="4Gc-1R-xJU" secondAttribute="centerX" id="Hxh-af-8Z0"/>
+                            <constraint firstItem="1bW-x7-E1s" firstAttribute="trailing" secondItem="pZA-ds-jqU" secondAttribute="trailing" constant="11" id="Kdk-eK-BO8"/>
+                            <constraint firstItem="pZA-ds-jqU" firstAttribute="top" secondItem="4Gc-1R-xJU" secondAttribute="bottom" constant="8" symbolic="YES" id="VVf-YP-dqx"/>
+                            <constraint firstItem="mnd-PM-bW7" firstAttribute="centerX" secondItem="ZDE-cv-T2p" secondAttribute="centerX" id="XIU-Mm-0sq"/>
+                            <constraint firstItem="P5k-Wf-GYZ" firstAttribute="top" secondItem="Jzu-So-5Yb" secondAttribute="bottom" constant="8" symbolic="YES" id="azt-WD-lzo"/>
+                            <constraint firstItem="mnd-PM-bW7" firstAttribute="top" secondItem="1bW-x7-E1s" secondAttribute="top" constant="65" id="bSr-xe-D6p"/>
+                            <constraint firstItem="ZDE-cv-T2p" firstAttribute="leading" secondItem="Jzu-So-5Yb" secondAttribute="leading" id="cDO-sV-NKy"/>
+                            <constraint firstItem="TsX-o7-Scp" firstAttribute="leading" secondItem="vsY-lJ-VOZ" secondAttribute="leadingMargin" id="fGC-vN-69l"/>
+                            <constraint firstItem="mnd-PM-bW7" firstAttribute="centerX" secondItem="Jzu-So-5Yb" secondAttribute="centerX" id="hMz-JR-s2H"/>
+                            <constraint firstItem="Jzu-So-5Yb" firstAttribute="leading" secondItem="P5k-Wf-GYZ" secondAttribute="leading" id="i6O-NR-0uY"/>
+                            <constraint firstItem="TsX-o7-Scp" firstAttribute="leading" secondItem="ZDE-cv-T2p" secondAttribute="leading" id="iE8-XB-e0X"/>
+                            <constraint firstItem="J8h-GC-sLu" firstAttribute="top" secondItem="pZA-ds-jqU" secondAttribute="bottom" constant="42" id="lt3-bM-IuQ"/>
+                            <constraint firstItem="mnd-PM-bW7" firstAttribute="centerX" secondItem="P5k-Wf-GYZ" secondAttribute="centerX" id="pdq-MU-exa"/>
+                            <constraint firstItem="Jzu-So-5Yb" firstAttribute="top" secondItem="ZDE-cv-T2p" secondAttribute="bottom" constant="8" symbolic="YES" id="qTP-xl-27n"/>
+                            <constraint firstItem="4Gc-1R-xJU" firstAttribute="top" secondItem="P5k-Wf-GYZ" secondAttribute="bottom" constant="8" symbolic="YES" id="rby-aK-jQE"/>
+                            <constraint firstItem="mnd-PM-bW7" firstAttribute="centerX" secondItem="TsX-o7-Scp" secondAttribute="centerX" id="sJp-pd-cqo"/>
+                            <constraint firstItem="P5k-Wf-GYZ" firstAttribute="leading" secondItem="4Gc-1R-xJU" secondAttribute="leading" id="uP2-xV-GRn"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="1bW-x7-E1s"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3PU-5V-efQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="909.60000000000002" y="670.19704433497543"/>
         </scene>
     </scenes>
 </document>

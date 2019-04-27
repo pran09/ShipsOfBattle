@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7204D28E227381C100823A22 /* battleship_grid_10x10.png in Resources */ = {isa = PBXBuildFile; fileRef = 7204D28D227381C000823A22 /* battleship_grid_10x10.png */; };
+		7204D290227381E400823A22 /* grid_10x10_white.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7204D28F227381E400823A22 /* grid_10x10_white.jpg */; };
 		720B100D22712FD800CB2CB9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 720B100C22712FD800CB2CB9 /* AppDelegate.swift */; };
 		720B100F22712FD800CB2CB9 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 720B100E22712FD800CB2CB9 /* GameScene.sks */; };
 		720B101122712FD800CB2CB9 /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = 720B101022712FD800CB2CB9 /* Actions.sks */; };
@@ -37,6 +39,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7204D28D227381C000823A22 /* battleship_grid_10x10.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = battleship_grid_10x10.png; sourceTree = "<group>"; };
+		7204D28F227381E400823A22 /* grid_10x10_white.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = grid_10x10_white.jpg; sourceTree = "<group>"; };
 		720B100922712FD800CB2CB9 /* ShipsOfBattle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShipsOfBattle.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		720B100C22712FD800CB2CB9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		720B100E22712FD800CB2CB9 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
@@ -103,6 +107,8 @@
 		720B100B22712FD800CB2CB9 /* ShipsOfBattle */ = {
 			isa = PBXGroup;
 			children = (
+				7204D28F227381E400823A22 /* grid_10x10_white.jpg */,
+				7204D28D227381C000823A22 /* battleship_grid_10x10.png */,
 				720B100C22712FD800CB2CB9 /* AppDelegate.swift */,
 				720B100E22712FD800CB2CB9 /* GameScene.sks */,
 				720B101022712FD800CB2CB9 /* Actions.sks */,
@@ -242,6 +248,8 @@
 				720B100F22712FD800CB2CB9 /* GameScene.sks in Resources */,
 				720B101A22712FDB00CB2CB9 /* Assets.xcassets in Resources */,
 				720B101D22712FDB00CB2CB9 /* LaunchScreen.storyboard in Resources */,
+				7204D290227381E400823A22 /* grid_10x10_white.jpg in Resources */,
+				7204D28E227381C100823A22 /* battleship_grid_10x10.png in Resources */,
 				720B101122712FD800CB2CB9 /* Actions.sks in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

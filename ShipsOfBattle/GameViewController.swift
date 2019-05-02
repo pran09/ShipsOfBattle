@@ -12,23 +12,26 @@ import GameplayKit
 
 class GameViewController: UIViewController {
 
-    @IBOutlet weak var playButton: UIButton!
-    @IBOutlet weak var rulesButton: UIButton!
+    @IBOutlet var titleLabel: UILabel!
     @IBOutlet var placingLabel: UILabel!
+    @IBOutlet var turnLabel: UILabel!
+    @IBOutlet var switchButton: UIButton!
     var placeCount = 5
+    var myTurn = false
     var userState = Array(repeating: 0, count: 100)
+    var oppState = Array(repeating: 0, count: 100)
+    
     
     @IBAction func placing_ships_action(_ sender: Any) {
         if ((userState[(sender as AnyObject).tag - 1] == 0) && (placeCount > 0)) {
             userState[(sender as AnyObject).tag - 1] = 1
+            // update background color
             (sender as! UIButton).backgroundColor = UIColor.blue
         }
         else if ((userState[(sender as AnyObject).tag - 1] == 1) && (placeCount > 0)) {
             userState[(sender as AnyObject).tag - 1] = 0
             (sender as! UIButton).backgroundColor = UIColor.white
         }
-        // update background color
-
     }
     
     override func viewDidLoad() {
@@ -48,15 +51,12 @@ class GameViewController: UIViewController {
 //            view.showsFPS = true
 //            view.showsNodeCount = true
 //        }
+        self.turnLabel.isHidden = true
+        self.switchButton.isHidden = true
     }
 
     override var shouldAutorotate: Bool {
         return true
-    }
-    
-    
-    @IBAction func pressedPlayButton(sender: Any) {
-        
     }
     
     @IBAction func placeButton(sender: Any) {
@@ -191,6 +191,21 @@ class GameViewController: UIViewController {
         }
         else if (placeCount == 0) {
             //Do something after all ships have been placed
+            turnLabel.isHidden = false
+            switchButton.isHidden = false
+            
+            placingLabel.text = "Turn: "
+            titleLabel.text = "Battle!"
+        }
+    }
+    @IBAction func switch_view_action(_ sender: Any) {
+        if (turnLabel.text == "Your Ships") {
+            turnLabel.text = "Your Attacks"
+            //update grid to show player's attacks
+        }
+        else if (turnLabel.text == "Your Attacks") {
+            turnLabel.text = "Your Ships"
+            //update grid to show player's ships
         }
     }
     

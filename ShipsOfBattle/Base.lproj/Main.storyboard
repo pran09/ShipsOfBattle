@@ -36,7 +36,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0FD-5a-Abd">
-                                <rect key="frame" x="158" y="458" width="59" height="51"/>
+                                <rect key="frame" x="137" y="477" width="101" height="51"/>
                                 <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="32"/>
                                 <state key="normal" title="Play">
@@ -51,12 +51,13 @@
                         <color key="backgroundColor" red="0.58072251080000004" green="0.066734083" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="AbK-ep-Kwj" firstAttribute="top" secondItem="0hJ-w1-7hL" secondAttribute="top" constant="53" id="6G1-cH-yzh"/>
+                            <constraint firstItem="0FD-5a-Abd" firstAttribute="centerX" secondItem="AbK-ep-Kwj" secondAttribute="centerX" id="87q-3y-J2O"/>
+                            <constraint firstItem="0FD-5a-Abd" firstAttribute="leading" secondItem="0hJ-w1-7hL" secondAttribute="leading" constant="137" id="9f6-qv-gM0"/>
+                            <constraint firstItem="0FD-5a-Abd" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="jRc-ru-BAx" secondAttribute="leading" id="Du8-SC-6kp"/>
                             <constraint firstItem="AbK-ep-Kwj" firstAttribute="centerX" secondItem="XPB-7n-bKi" secondAttribute="centerX" id="FO2-UL-IC9"/>
-                            <constraint firstItem="jRc-ru-BAx" firstAttribute="top" secondItem="0FD-5a-Abd" secondAttribute="bottom" constant="71" id="ZKf-Cg-P4r"/>
-                            <constraint firstItem="0FD-5a-Abd" firstAttribute="centerX" secondItem="jRc-ru-BAx" secondAttribute="centerX" id="aYF-kp-Heu"/>
-                            <constraint firstItem="AbK-ep-Kwj" firstAttribute="centerX" secondItem="0FD-5a-Abd" secondAttribute="centerX" id="rSu-2P-uqa"/>
-                            <constraint firstItem="jRc-ru-BAx" firstAttribute="leading" secondItem="0hJ-w1-7hL" secondAttribute="leading" constant="137" id="ueW-ah-a34"/>
-                            <constraint firstItem="0hJ-w1-7hL" firstAttribute="bottom" secondItem="jRc-ru-BAx" secondAttribute="bottom" constant="147" id="zlP-2F-fJm"/>
+                            <constraint firstItem="0FD-5a-Abd" firstAttribute="trailing" secondItem="jRc-ru-BAx" secondAttribute="trailing" id="QJ9-xd-dCi"/>
+                            <constraint firstAttribute="bottom" secondItem="0FD-5a-Abd" secondAttribute="bottom" constant="284" id="fBd-qV-tIO"/>
+                            <constraint firstItem="jRc-ru-BAx" firstAttribute="top" secondItem="0FD-5a-Abd" secondAttribute="bottom" constant="52" id="jaI-dK-XH6"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="0hJ-w1-7hL"/>
                     </view>
@@ -172,7 +173,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="- Blue dot signals a hit, white dot signals a miss" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Gc-1R-xJU">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="- Red &quot;x&quot; signals a hit, grey &quot;x&quot; signals a miss" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Gc-1R-xJU">
                                 <rect key="frame" x="16" y="474" width="343" height="71"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="71" id="X7X-7k-hAJ"/>

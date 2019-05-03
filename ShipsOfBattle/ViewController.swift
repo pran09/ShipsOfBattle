@@ -2,44 +2,125 @@
 //  ViewController.swift
 //  ShipsOfBattle
 //
-//  Created by Davis Robeson on 4/26/19.
+//  Created by 王澜睎 on 2019/5/2.
 //  Copyright © 2019 trey. All rights reserved.
 //
 
 import UIKit
+import MultipeerConnectivity
 
-class ViewController: UIViewController {
+
+class ViewController: UIViewController, MCSessionDelegate, MCBrowserViewControllerDelegate{
     
-    @IBAction func showRulesSubView(sender: AnyObject) {
-        let squareBackground = UIView(frame: CGRect(x:50, y:50, width:300, height:500))
-        squareBackground.backgroundColor = UIColor.white
-        self.view.addSubview(squareBackground)
-        
-        //        let centerSquare = UIView(frame: CGRect(x: 50, y:50, width: 100, height:100))
-        //        centerSquare.backgroundColor = UIColor.black
-        //        squareBackground.addSubview(centerSquare)
-        
-        //        UIView.animate(withDuration: 3.0, animations: {
-        //            //            centerSquare.backgroundColor = UIColor.blue
-        //            //            let rotation = CGAffineTransform(rotationAngle: CGFloat(Double.pi))
-        //            //            centerSquare.transform = rotation
-        //
-        //            let expand = CGAffineTransform(scaleX: 2, y: 2 )
-        //            centerSquare.transform = expand
-        //        })
-    }
-    
-    @IBAction func pressedPlayButton(sender: Any) {
-        
-    }
+    var hosting:Bool!
+    var peerID:MCPeerID!
+    var mcSession: MCSession!
+    var mcAdvertiserAssistant: MCAdvertiserAssistant!
+    @IBOutlet var startButton: UIButton!
+    @IBOutlet var textLabel: UILabel!
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        //self.startButton.isHidden = true
+        hosting = false
+        peerID = MCPeerID(displayName: UIDevice.current.name)
+        mcSession = MCSession(peer: peerID, securityIdentity: nil, encryptionPreference: .required)
+        mcSession.delegate=self
+        mcSession.disconnect()
         // Do any additional setup after loading the view.
     }
     
-
+    @IBAction func connectButtonTapped(_ sender: Any) {
+        if mcSession.connectedPeers.count == 0 && !hosting{
+            let connectActionSheet = UIAlertController(title: "Start a Game", message: "Do you want to Host or Join a game?", preferredStyle: .actionSheet)
+            connectActionSheet.addAction(UIAlertAction(title: "Host a Game", style: .default, handler: {
+                (action:UIAlertAction) in
+                self.mcAdvertiserAssistant = MCAdvertiserAssistant(serviceType: "doesnt-matter", discoveryInfo: nil, session: self.mcSession)
+                self.mcAdvertiserAssistant.start()
+                self.hosting = true
+            }))
+            
+            connectActionSheet.addAction(UIAlertAction(title: "Join a Game", style: .default, handler: {
+                (action:UIAlertAction) in
+                let mcBrowser = MCBrowserViewController(serviceType: "doesnt-matter", session: self.mcSession)
+                mcBrowser.delegate = self
+                self.present(mcBrowser, animated:true, completion: nil)
+            }))
+            connectActionSheet.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
+            self.present(connectActionSheet, animated:true, completion: nil)
+            
+        }else if mcSession.connectedPeers.count == 0 && hosting{
+            let waitActionSheet = UIAlertController(title: "Waiting...", message: "Waiting for other to join the game", preferredStyle: .actionSheet)
+            waitActionSheet.addAction(UIAlertAction(title: "Disconnect", style: .destructive, handler: {
+                (action) in
+                self.mcSession.disconnect()
+                self.hosting = false
+            }))
+            waitActionSheet.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
+            self.present(waitActionSheet, animated:true, completion: nil)
+            
+        }else{
+            let disconnectActionSheet = UIAlertController(title: "Are you sure you want to disconnect", message: nil, preferredStyle: .actionSheet)
+            disconnectActionSheet.addAction(UIAlertAction(title: "Disconnect", style: .destructive, handler: {
+                (action:UIAlertAction) in
+                self.mcSession.disconnect()
+            }))
+            disconnectActionSheet.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
+            self.present(disconnectActionSheet, animated:true, completion: nil)
+            
+        }
+    }
+    
+    
+    func session(_ session: MCSession, peer peerID: MCPeerID, didChange state: MCSessionState) {
+        switch state {
+        case MCSessionState.connected:
+            print("Connected: \(peerID.displayName)")
+//            startButton.isHidden = false
+//            textLabel.text = "Connected! Press start to begin the game"
+        case MCSessionState.connecting:
+            print("Connecting: \(peerID.displayName)")
+        case MCSessionState.notConnected:
+            print("Not Connected: \(peerID.displayName)")
+        @unknown default:
+            print("Unknown case")
+        }
+        
+        
+    }
+    
+    func session(_ session: MCSession, didReceive data: Data, fromPeer peerID: MCPeerID) {
+        DispatchQueue.main.async {
+//            self.recMsg = NSString(data: data as Data, encoding: String.Encoding.utf8.rawValue)! as String
+//            self.chatTextView.text = self.chatTextView.text+self.recMsg
+        }
+        
+    }
+    
+    func session(_ session: MCSession, didReceive stream: InputStream, withName streamName: String, fromPeer peerID: MCPeerID) {
+        
+    }
+    
+    func session(_ session: MCSession, didStartReceivingResourceWithName resourceName: String, fromPeer peerID: MCPeerID, with progress: Progress) {
+        
+    }
+    
+    func session(_ session: MCSession, didFinishReceivingResourceWithName resourceName: String, fromPeer peerID: MCPeerID, at localURL: URL?, withError error: Error?) {
+        
+    }
+    
+    func browserViewControllerDidFinish(_ browserViewController: MCBrowserViewController) {
+        dismiss(animated: true, completion: nil)
+        
+    }
+    
+    func browserViewControllerWasCancelled(_ browserViewController: MCBrowserViewController) {
+        dismiss(animated: true, completion: nil)
+        
+    }
+    
+    
     /*
     // MARK: - Navigation
 

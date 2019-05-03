@@ -19,6 +19,7 @@
 		720B101D22712FDB00CB2CB9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 720B101B22712FDB00CB2CB9 /* LaunchScreen.storyboard */; };
 		720B102822712FDC00CB2CB9 /* ShipsOfBattleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 720B102722712FDC00CB2CB9 /* ShipsOfBattleTests.swift */; };
 		720B103322712FDC00CB2CB9 /* ShipsOfBattleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 720B103222712FDC00CB2CB9 /* ShipsOfBattleUITests.swift */; };
+		72E0F6E1227CBB93001721AB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72E0F6E0227CBB93001721AB /* ViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,7 @@
 		720B102E22712FDC00CB2CB9 /* ShipsOfBattleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ShipsOfBattleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		720B103222712FDC00CB2CB9 /* ShipsOfBattleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShipsOfBattleUITests.swift; sourceTree = "<group>"; };
 		720B103422712FDC00CB2CB9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		72E0F6E0227CBB93001721AB /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +109,7 @@
 		720B100B22712FD800CB2CB9 /* ShipsOfBattle */ = {
 			isa = PBXGroup;
 			children = (
+				72E0F6E0227CBB93001721AB /* ViewController.swift */,
 				7204D28F227381E400823A22 /* grid_10x10_white.jpg */,
 				7204D28D227381C000823A22 /* battleship_grid_10x10.png */,
 				720B100C22712FD800CB2CB9 /* AppDelegate.swift */,
@@ -277,6 +280,7 @@
 			files = (
 				720B101322712FD800CB2CB9 /* GameScene.swift in Sources */,
 				720B101522712FD800CB2CB9 /* GameViewController.swift in Sources */,
+				72E0F6E1227CBB93001721AB /* ViewController.swift in Sources */,
 				720B100D22712FD800CB2CB9 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

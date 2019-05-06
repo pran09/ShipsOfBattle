@@ -196,6 +196,8 @@ class GameViewController: UIViewController {
             
             placingLabel.text = "Turn: "
             titleLabel.text = "Battle!"
+            
+            //send grid data to opponent
         }
     }
     @IBAction func switch_view_action(_ sender: Any) {

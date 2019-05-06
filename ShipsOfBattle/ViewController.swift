@@ -22,7 +22,7 @@ class ViewController: UIViewController, MCSessionDelegate, MCBrowserViewControll
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        //self.startButton.isHidden = true
+        self.startButton.isHidden = true
         hosting = false
         peerID = MCPeerID(displayName: UIDevice.current.name)
         mcSession = MCSession(peer: peerID, securityIdentity: nil, encryptionPreference: .required)
@@ -51,7 +51,7 @@ class ViewController: UIViewController, MCSessionDelegate, MCBrowserViewControll
             self.present(connectActionSheet, animated:true, completion: nil)
             
         }else if mcSession.connectedPeers.count == 0 && hosting{
-            let waitActionSheet = UIAlertController(title: "Waiting...", message: "Waiting for other to join the game", preferredStyle: .actionSheet)
+            let waitActionSheet = UIAlertController(title: "Waiting...", message: "Waiting for opponent to join the game", preferredStyle: .actionSheet)
             waitActionSheet.addAction(UIAlertAction(title: "Disconnect", style: .destructive, handler: {
                 (action) in
                 self.mcSession.disconnect()
@@ -61,14 +61,26 @@ class ViewController: UIViewController, MCSessionDelegate, MCBrowserViewControll
             self.present(waitActionSheet, animated:true, completion: nil)
             
         }else{
-            let disconnectActionSheet = UIAlertController(title: "Are you sure you want to disconnect", message: nil, preferredStyle: .actionSheet)
+            let disconnectActionSheet = UIAlertController(title: "Are you sure you want to disconnect?", message: nil, preferredStyle: .actionSheet)
             disconnectActionSheet.addAction(UIAlertAction(title: "Disconnect", style: .destructive, handler: {
                 (action:UIAlertAction) in
                 self.mcSession.disconnect()
+                self.startButton.isHidden = true
+                self.textLabel.text = "Connect to another user"
             }))
             disconnectActionSheet.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
             self.present(disconnectActionSheet, animated:true, completion: nil)
             
+        }
+    }
+    
+    func changeView(hide: Bool) {
+        if hide {
+            startButton.isHidden = true
+            textLabel.text = "Connect to another user"
+        } else {
+            startButton.isHidden = false
+            textLabel.text = "Connected! Press start begin"
         }
     }
     
@@ -77,17 +89,19 @@ class ViewController: UIViewController, MCSessionDelegate, MCBrowserViewControll
         switch state {
         case MCSessionState.connected:
             print("Connected: \(peerID.displayName)")
-//            startButton.isHidden = false
-//            textLabel.text = "Connected! Press start to begin the game"
+            DispatchQueue.main.async {
+                self.changeView(hide: false)
+            }
         case MCSessionState.connecting:
             print("Connecting: \(peerID.displayName)")
         case MCSessionState.notConnected:
             print("Not Connected: \(peerID.displayName)")
+            DispatchQueue.main.async {
+                self.changeView(hide: true)
+            }
         @unknown default:
             print("Unknown case")
         }
-        
-        
     }
     
     func session(_ session: MCSession, didReceive data: Data, fromPeer peerID: MCPeerID) {

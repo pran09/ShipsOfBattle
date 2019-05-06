@@ -9,8 +9,15 @@
 import UIKit
 import SpriteKit
 import GameplayKit
+import MultipeerConnectivity
 
-class GameViewController: UIViewController {
+class GameViewController: UIViewController, MCSessionDelegate, MCBrowserViewControllerDelegate{
+    
+    var randVal: Int!
+    var hosting:Bool!
+    var peerID:MCPeerID!
+    var mcSession: MCSession!
+    var mcAdvertiserAssistant: MCAdvertiserAssistant!
 
     @IBOutlet var titleLabel: UILabel!
     @IBOutlet var placingLabel: UILabel!
@@ -198,6 +205,9 @@ class GameViewController: UIViewController {
             titleLabel.text = "Battle!"
             
             //send grid data to opponent
+            if hosting == false{
+//                try mcSession.send(Data, toPeers: mcSession.connectedPeers, with: .reliable)
+            }
         }
     }
     @IBAction func switch_view_action(_ sender: Any) {
@@ -209,6 +219,47 @@ class GameViewController: UIViewController {
             turnLabel.text = "Your Ships"
             //update grid to show player's ships
         }
+    }
+    
+    func session(_ session: MCSession, peer peerID: MCPeerID, didChange state: MCSessionState) {
+        switch state {
+        case MCSessionState.connected:
+            print("Connected: \(peerID.displayName)")
+        case MCSessionState.connecting:
+            print("Connecting: \(peerID.displayName)")
+        case MCSessionState.notConnected:
+            print("Not Connected: \(peerID.displayName)")
+            DispatchQueue.main.async {
+                // TODO: do something if we get disconnected from the opponent
+            }
+        @unknown default:
+            print("Unknown case")
+        }
+    }
+    
+    func session(_ session: MCSession, didReceive data: Data, fromPeer peerID: MCPeerID) {
+//        self.recMsg = NSString(data: data as Data, encoding: String.Encoding.utf8.rawValue)! as String
+//        self.chatTextView.text = self.chatTextView.text+self.recMsg
+    }
+    
+    func session(_ session: MCSession, didReceive stream: InputStream, withName streamName: String, fromPeer peerID: MCPeerID) {
+        
+    }
+    
+    func session(_ session: MCSession, didStartReceivingResourceWithName resourceName: String, fromPeer peerID: MCPeerID, with progress: Progress) {
+        
+    }
+    
+    func session(_ session: MCSession, didFinishReceivingResourceWithName resourceName: String, fromPeer peerID: MCPeerID, at localURL: URL?, withError error: Error?) {
+        
+    }
+    
+    func browserViewControllerDidFinish(_ browserViewController: MCBrowserViewController) {
+        dismiss(animated: true, completion: nil)
+    }
+    
+    func browserViewControllerWasCancelled(_ browserViewController: MCBrowserViewController) {
+        dismiss(animated: true, completion: nil)
     }
     
     override var supportedInterfaceOrientations: UIInterfaceOrientationMask {

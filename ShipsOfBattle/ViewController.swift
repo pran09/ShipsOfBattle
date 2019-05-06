@@ -12,8 +12,9 @@ import MultipeerConnectivity
 
 class ViewController: UIViewController, MCSessionDelegate, MCBrowserViewControllerDelegate{
     
-    var hosting:Bool!
-    var peerID:MCPeerID!
+    var randVal: Int!
+    var hosting: Bool!
+    var peerID: MCPeerID!
     var mcSession: MCSession!
     var mcAdvertiserAssistant: MCAdvertiserAssistant!
     @IBOutlet var startButton: UIButton!
@@ -28,7 +29,19 @@ class ViewController: UIViewController, MCSessionDelegate, MCBrowserViewControll
         mcSession = MCSession(peer: peerID, securityIdentity: nil, encryptionPreference: .required)
         mcSession.delegate=self
         mcSession.disconnect()
+        randVal = Int.random(in: 0 ... 100)
         // Do any additional setup after loading the view.
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let gvc = segue.destination as? GameViewController {
+            // send connection info upon segue to GameViewController
+            gvc.hosting = hosting
+            gvc.peerID = peerID
+            gvc.mcSession = mcSession
+            gvc.mcAdvertiserAssistant = mcAdvertiserAssistant
+            gvc.randVal = randVal
+        }
     }
     
     @IBAction func connectButtonTapped(_ sender: Any) {
@@ -126,12 +139,10 @@ class ViewController: UIViewController, MCSessionDelegate, MCBrowserViewControll
     
     func browserViewControllerDidFinish(_ browserViewController: MCBrowserViewController) {
         dismiss(animated: true, completion: nil)
-        
     }
     
     func browserViewControllerWasCancelled(_ browserViewController: MCBrowserViewController) {
         dismiss(animated: true, completion: nil)
-        
     }
     
     

@@ -118,6 +118,7 @@ class ViewController: UIViewController, MCSessionDelegate, MCBrowserViewControll
     }
     
     func session(_ session: MCSession, didReceive data: Data, fromPeer peerID: MCPeerID) {
+//        print("Received from: \(peerID.displayName)")
         DispatchQueue.main.async {
 //            self.recMsg = NSString(data: data as Data, encoding: String.Encoding.utf8.rawValue)! as String
 //            self.chatTextView.text = self.chatTextView.text+self.recMsg

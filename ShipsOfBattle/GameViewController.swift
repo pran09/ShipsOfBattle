@@ -32,6 +32,7 @@ class GameViewController: UIViewController, MCSessionDelegate, MCBrowserViewCont
     var oppState = Array(repeating: 0, count: 100)
     var userAttacks = Array(repeating: 0, count: 100)
     var attacks = Array(repeating: 0, count: 5)
+    var oppAttacks = Array(repeating: 0, count: 5)
     
     
     @IBAction func placing_ships_action(_ sender: Any) {
@@ -253,8 +254,37 @@ class GameViewController: UIViewController, MCSessionDelegate, MCBrowserViewCont
             // TODO: player whose turn it is, make 5 attacks then send result to opponent
             if myTurn {
                 // pick 5 spots to attack
-            } else {
-                
+                var selectedSpaces = 0
+                var i = 0
+                for j in 0..<userAttacks.count {
+                    if (userAttacks[j] == 1) {
+                        selectedSpaces += 1
+                        if i < 5 {
+                            attacks[i] = j
+                            i += 1
+                        }
+                    }
+                }
+                if selectedSpaces == 5 {
+                    // check for hit/miss
+                    for space in attacks {
+                        if oppState[space] == 2 {
+                            // hit
+                            userAttacks[space] = 2
+                        } else if oppState[space] == 0 {
+                            // miss
+                            userAttacks[space] = 3
+                        }
+                    }
+                    myView = true
+                    switch_view_action((Any).self)
+                    let dict: [String: [Int]] = ["attacks": userAttacks]
+                    if sendData(dictionaryWithData: dict) == false{
+                        print("attacks failed to send")
+                    }
+                    userAttacks = [0, 0, 0, 0, 0]
+                    swapTurn(whosTurn: false)
+                }
             }
         }
     }
@@ -286,12 +316,19 @@ class GameViewController: UIViewController, MCSessionDelegate, MCBrowserViewCont
                 turnLabel.text = "Your Ships"
                 //update grid to show player's ships/opponent's attacks
                 for i in 0..<userState.count {
+                    let tmpButton = self.view.viewWithTag(i+1) as! UIButton
                     if userState[i] == 0 {
-                        let tmpButton = self.view.viewWithTag(i+1) as! UIButton
                         tmpButton.backgroundColor = UIColor.white
                     } else if userState[i] == 2 {
-                        let tmpButton = self.view.viewWithTag(i+1) as! UIButton
                         tmpButton.backgroundColor = UIColor.black
+                    } else if userState[i] == 3 {
+                        tmpButton.backgroundColor = UIColor.black
+                        tmpButton.setTitle("x", for: .normal)
+                        tmpButton.setTitleColor(UIColor.red, for: .normal)
+                    } else if userState[i] == 4 {
+                        tmpButton.backgroundColor = UIColor.white
+                        tmpButton.setTitle("x", for: .normal)
+                        tmpButton.setTitleColor(UIColor.gray, for: .normal)
                     }
                 }
             }
@@ -305,6 +342,14 @@ class GameViewController: UIViewController, MCSessionDelegate, MCBrowserViewCont
         } else {
             placingLabel.text = "Turn: Opponent's"
             myTurn = false
+        }
+    }
+    
+    func checkForWin() {
+        let check = userState.firstIndex(of: 2)
+        if check == nil { // win
+            // TODO: handle victory
+            
         }
     }
     
@@ -405,6 +450,22 @@ class GameViewController: UIViewController, MCSessionDelegate, MCBrowserViewCont
                     }
                     self.placeCount -= 1
                     self.oppReady = true
+                } else if (dataDictionary?["attacks"] != nil) {
+                    self.oppAttacks = dataDictionary?["attacks"] as! [Int]
+                    for space in self.oppAttacks {
+                        if self.userState[space] == 2 {
+                            // hit
+                            self.userState[space] = 3
+                        } else if self.userState[space] == 0 {
+                            // miss
+                            self.userState[space] = 4
+                        }
+                    }
+                    self.myView = false
+                    self.switch_view_action((Any).self)
+                    self.swapTurn(whosTurn: true)
+                    self.oppAttacks = [0, 0, 0, 0, 0]
+                    self.checkForWin()
                 }
             } catch let error as NSError {
                 let ac = UIAlertController(title: "Send error", message: error.localizedDescription, preferredStyle: .alert)

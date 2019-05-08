@@ -30,6 +30,7 @@ class GameViewController: UIViewController, MCSessionDelegate, MCBrowserViewCont
     var oppReady = false
     var userState = Array(repeating: 0, count: 100)
     var oppState = Array(repeating: 0, count: 100)
+    var userAttacks = Array(repeating: 0, count: 100)
     
     
     @IBAction func placing_ships_action(_ sender: Any) {
@@ -245,16 +246,23 @@ class GameViewController: UIViewController, MCSessionDelegate, MCBrowserViewCont
                 myView = false
                 turnLabel.text = "Your Attacks"
                 //update grid to show player's attacks/opponent's ships
-                for i in 0..<oppState.count {
-                    if oppState[i] == 0 {
+                for i in 0..<userAttacks.count {
+                    if userAttacks[i] == 0 {
+                        // state: not altered
                         let tmpButton = self.view.viewWithTag(i+1) as! UIButton
                         tmpButton.backgroundColor = UIColor.white
-                    } else if oppState[i] == 2 {
+                    } else if userAttacks[i] == 1 {
+                        // state: miss
                         let tmpButton = self.view.viewWithTag(i+1) as! UIButton
-                        tmpButton.backgroundColor = UIColor.black
+                        tmpButton.setTitle("x", for: .normal)
+                        tmpButton.setTitleColor(UIColor.gray, for: .normal)
+                    } else if userAttacks[i] == 2 {
+                        // state: hit
+                        let tmpButton = self.view.viewWithTag(i+1) as! UIButton
+                        tmpButton.setTitle("x", for: .normal)
+                        tmpButton.setTitleColor(UIColor.red, for: .normal)
                     }
                 }
-                
             } else {
                 myView = true
                 turnLabel.text = "Your Ships"

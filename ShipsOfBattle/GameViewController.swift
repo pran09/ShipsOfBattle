@@ -23,7 +23,7 @@ class GameViewController: UIViewController, MCSessionDelegate, MCBrowserViewCont
     @IBOutlet var placingLabel: UILabel!
     @IBOutlet var turnLabel: UILabel!
     @IBOutlet var switchButton: UIButton!
-    var placeCount = 6
+    var placeCount = 7
     var myTurn = false
     var myView = true
     var start = false
@@ -31,17 +31,30 @@ class GameViewController: UIViewController, MCSessionDelegate, MCBrowserViewCont
     var userState = Array(repeating: 0, count: 100)
     var oppState = Array(repeating: 0, count: 100)
     var userAttacks = Array(repeating: 0, count: 100)
+    var attacks = Array(repeating: 0, count: 5)
     
     
     @IBAction func placing_ships_action(_ sender: Any) {
-        if ((userState[(sender as AnyObject).tag - 1] == 0) && (placeCount > 0)) {
+        if ((userState[(sender as AnyObject).tag - 1] == 0) && (placeCount > 1)) {
             userState[(sender as AnyObject).tag - 1] = 1
             // update background color
             (sender as! UIButton).backgroundColor = UIColor.blue
         }
-        else if ((userState[(sender as AnyObject).tag - 1] == 1) && (placeCount > 0)) {
+        else if ((userState[(sender as AnyObject).tag - 1] == 1) && (placeCount > 1)) {
             userState[(sender as AnyObject).tag - 1] = 0
             (sender as! UIButton).backgroundColor = UIColor.white
+        } else {
+            if myTurn && myView == false && oppReady{
+                // display blue x on selected button and update userAttacks array w/ value of 1
+                if userAttacks[(sender as AnyObject).tag - 1] == 0 {
+                    userAttacks[(sender as AnyObject).tag - 1] = 1
+                    (sender as! UIButton).setTitle("x", for: .normal)
+                    (sender as! UIButton).setTitleColor(UIColor.blue, for: .normal)
+                } else if userAttacks[(sender as AnyObject).tag - 1] == 1 {
+                    userAttacks[(sender as AnyObject).tag - 1] = 0
+                    (sender as! UIButton).setTitle("", for: .normal)
+                }
+            }
         }
     }
     
@@ -80,7 +93,7 @@ class GameViewController: UIViewController, MCSessionDelegate, MCBrowserViewCont
                 selectedSpaces += 1
             }
         }
-        if (placeCount == 6) { //place carrier
+        if (placeCount == 7) { //place carrier
             if (selectedSpaces == 5) { //right amount of places selected
                 let first = userState.firstIndex(of: 1)
                 if ((userState[first!+1] == 1) && (userState[first!+2] == 1) && (userState[first!+3] == 1) && (userState[first!+4] == 1)){
@@ -109,7 +122,7 @@ class GameViewController: UIViewController, MCSessionDelegate, MCBrowserViewCont
                 }
             }
         }
-        else if (placeCount == 5) { //place battleship
+        else if (placeCount == 6) { //place battleship
             if (selectedSpaces == 4) { //right amount of places selected
                 let first = userState.firstIndex(of: 1)
                 if ((userState[first!+1] == 1) && (userState[first!+2] == 1) && (userState[first!+3] == 1)){
@@ -138,7 +151,7 @@ class GameViewController: UIViewController, MCSessionDelegate, MCBrowserViewCont
                 }
             }
         }
-        else if ((placeCount == 4) || (placeCount == 3)) { //place cruiser or submarine
+        else if ((placeCount == 5) || (placeCount == 4)) { //place cruiser or submarine
             if (selectedSpaces == 3) { //right amount of places selected
                 let first = userState.firstIndex(of: 1)
                 if ((userState[first!+1] == 1) && (userState[first!+2] == 1)){
@@ -151,7 +164,7 @@ class GameViewController: UIViewController, MCSessionDelegate, MCBrowserViewCont
                             tmpButton.backgroundColor = UIColor.black
                             userState[first!+i] = 2
                         }
-                        if (placeCount == 4) {
+                        if (placeCount == 5) {
                             placingLabel.text = "Select 3 spaces for your submarine"
                         } else {
                             placingLabel.text = "Select 2 spaces for your destroyer"
@@ -166,7 +179,7 @@ class GameViewController: UIViewController, MCSessionDelegate, MCBrowserViewCont
                         tmpButton.backgroundColor = UIColor.black
                         userState[first!+(10*i)] = 2
                     }
-                    if (placeCount == 4) {
+                    if (placeCount == 5) {
                         placingLabel.text = "Select 3 spaces for your submarine"
                     } else {
                         placingLabel.text = "Select 2 spaces for your destroyer"
@@ -175,7 +188,7 @@ class GameViewController: UIViewController, MCSessionDelegate, MCBrowserViewCont
                 }
             }
         }
-        else if (placeCount == 2) { //place cruiser or submarine
+        else if (placeCount == 3) { //place cruiser or submarine
             if (selectedSpaces == 2) { //right amount of places selected
                 let first = userState.firstIndex(of: 1)
                 if (userState[first!+1] == 1){
@@ -203,7 +216,7 @@ class GameViewController: UIViewController, MCSessionDelegate, MCBrowserViewCont
                 }
             }
         }
-        else if (placeCount == 1) {
+        else if (placeCount == 2) {
             //Do something after all ships have been placed
             turnLabel.isHidden = false
             switchButton.isHidden = false
@@ -236,8 +249,13 @@ class GameViewController: UIViewController, MCSessionDelegate, MCBrowserViewCont
             
             start = true
             placeCount -= 1
-        } else if (placeCount == -1) {
+        } else if (placeCount == 0) {
             // TODO: player whose turn it is, make 5 attacks then send result to opponent
+            if myTurn {
+                // pick 5 spots to attack
+            } else {
+                
+            }
         }
     }
     @IBAction func switch_view_action(_ sender: Any) {
@@ -247,20 +265,20 @@ class GameViewController: UIViewController, MCSessionDelegate, MCBrowserViewCont
                 turnLabel.text = "Your Attacks"
                 //update grid to show player's attacks/opponent's ships
                 for i in 0..<userAttacks.count {
-                    if userAttacks[i] == 0 {
-                        // state: not altered
-                        let tmpButton = self.view.viewWithTag(i+1) as! UIButton
-                        tmpButton.backgroundColor = UIColor.white
-                    } else if userAttacks[i] == 1 {
-                        // state: miss
-                        let tmpButton = self.view.viewWithTag(i+1) as! UIButton
+                    let tmpButton = self.view.viewWithTag(i+1) as! UIButton
+                    tmpButton.backgroundColor = UIColor.white
+                    if userAttacks[i] == 1 {
+                        // state: selected
                         tmpButton.setTitle("x", for: .normal)
-                        tmpButton.setTitleColor(UIColor.gray, for: .normal)
+                        tmpButton.setTitleColor(UIColor.blue, for: .normal)
                     } else if userAttacks[i] == 2 {
                         // state: hit
-                        let tmpButton = self.view.viewWithTag(i+1) as! UIButton
                         tmpButton.setTitle("x", for: .normal)
                         tmpButton.setTitleColor(UIColor.red, for: .normal)
+                    } else if userAttacks[i] == 3 {
+                        // state: miss
+                        tmpButton.setTitle("x", for: .normal)
+                        tmpButton.setTitleColor(UIColor.gray, for: .normal)
                     }
                 }
             } else {

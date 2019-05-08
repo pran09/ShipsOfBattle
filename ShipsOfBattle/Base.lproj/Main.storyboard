@@ -271,410 +271,478 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="grid_10x10_white.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="Qa5-2C-D5j">
                                 <rect key="frame" x="16" y="188" width="343" height="436"/>
                             </imageView>
-                            <button opaque="NO" tag="71" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2pp-F5-xx1">
-                                <rect key="frame" x="43" y="476" width="29" height="30"/>
+                            <button opaque="NO" tag="71" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2pp-F5-xx1">
+                                <rect key="frame" x="44" y="479" width="27" height="27"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
                                     <action selector="placing_ships_action:" destination="FC4-2w-cz5" eventType="touchUpInside" id="02P-yH-Bra"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="81" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DqN-yN-tce">
-                                <rect key="frame" x="43" y="508" width="29" height="30"/>
+                            <button opaque="NO" tag="81" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DqN-yN-tce">
+                                <rect key="frame" x="44" y="509" width="27" height="27"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
                                     <action selector="placing_ships_action:" destination="FC4-2w-cz5" eventType="touchUpInside" id="BOA-ka-QVC"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="91" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jWb-QG-lez">
-                                <rect key="frame" x="43" y="537" width="29" height="30"/>
+                            <button opaque="NO" tag="91" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jWb-QG-lez">
+                                <rect key="frame" x="44" y="540" width="27" height="27"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
                                     <action selector="placing_ships_action:" destination="FC4-2w-cz5" eventType="touchUpInside" id="2yS-Ab-s0i"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="92" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ptr-s5-ult">
-                                <rect key="frame" x="76" y="537" width="30" height="30"/>
+                            <button opaque="NO" tag="92" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ptr-s5-ult">
+                                <rect key="frame" x="75" y="540" width="27" height="27"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
                                     <action selector="placing_ships_action:" destination="FC4-2w-cz5" eventType="touchUpInside" id="dgA-N8-vfb"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="93" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dsb-WP-Df9">
-                                <rect key="frame" x="107" y="537" width="30" height="30"/>
+                            <button opaque="NO" tag="93" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dsb-WP-Df9">
+                                <rect key="frame" x="107" y="540" width="27" height="27"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
                                     <action selector="placing_ships_action:" destination="FC4-2w-cz5" eventType="touchUpInside" id="eyC-uj-apV"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="94" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WfD-6A-Jet">
-                                <rect key="frame" x="138" y="537" width="30" height="30"/>
+                            <button opaque="NO" tag="94" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WfD-6A-Jet">
+                                <rect key="frame" x="137" y="540" width="27" height="27"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
                                     <action selector="placing_ships_action:" destination="FC4-2w-cz5" eventType="touchUpInside" id="to9-kK-t9U"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="95" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iEd-sQ-Hnq">
-                                <rect key="frame" x="169" y="537" width="30" height="30"/>
+                            <button opaque="NO" tag="95" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iEd-sQ-Hnq">
+                                <rect key="frame" x="168" y="540" width="27" height="27"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
                                     <action selector="placing_ships_action:" destination="FC4-2w-cz5" eventType="touchUpInside" id="kgg-hj-pAh"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="96" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bKz-vp-ggE">
-                                <rect key="frame" x="200" y="537" width="30" height="30"/>
+                            <button opaque="NO" tag="96" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bKz-vp-ggE">
+                                <rect key="frame" x="199" y="540" width="27" height="27"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
                                     <action selector="placing_ships_action:" destination="FC4-2w-cz5" eventType="touchUpInside" id="7Fp-Qh-0oD"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="97" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EHF-iH-S9f">
-                                <rect key="frame" x="231" y="537" width="30" height="30"/>
+                            <button opaque="NO" tag="97" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EHF-iH-S9f">
+                                <rect key="frame" x="230" y="540" width="27" height="27"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
                                     <action selector="placing_ships_action:" destination="FC4-2w-cz5" eventType="touchUpInside" id="BRs-q6-5NW"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="98" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PIm-gD-IhA">
-                                <rect key="frame" x="262" y="537" width="30" height="30"/>
+                            <button opaque="NO" tag="98" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PIm-gD-IhA">
+                                <rect key="frame" x="261" y="540" width="27" height="27"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
                                     <action selector="placing_ships_action:" destination="FC4-2w-cz5" eventType="touchUpInside" id="Gm1-5F-iQn"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="99" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RKC-4R-ujj">
-                                <rect key="frame" x="293" y="537" width="30" height="30"/>
+                            <button opaque="NO" tag="99" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RKC-4R-ujj">
+                                <rect key="frame" x="292" y="540" width="27" height="27"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
                                     <action selector="placing_ships_action:" destination="FC4-2w-cz5" eventType="touchUpInside" id="FQI-7P-ACx"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="100" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="COL-zL-boI">
-                                <rect key="frame" x="323" y="537" width="30" height="30"/>
+                            <button opaque="NO" tag="100" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="COL-zL-boI">
+                                <rect key="frame" x="322" y="540" width="27" height="27"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
                                     <action selector="placing_ships_action:" destination="FC4-2w-cz5" eventType="touchUpInside" id="fvg-zr-KC3"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="82" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5pM-fi-iHW">
-                                <rect key="frame" x="76" y="508" width="30" height="30"/>
+                            <button opaque="NO" tag="82" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5pM-fi-iHW">
+                                <rect key="frame" x="75" y="509" width="27" height="27"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
                                     <action selector="placing_ships_action:" destination="FC4-2w-cz5" eventType="touchUpInside" id="uUm-LH-q1m"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="83" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7o0-Xq-fLL">
-                                <rect key="frame" x="107" y="508" width="30" height="30"/>
+                            <button opaque="NO" tag="83" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7o0-Xq-fLL">
+                                <rect key="frame" x="107" y="509" width="27" height="27"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
                                     <action selector="placing_ships_action:" destination="FC4-2w-cz5" eventType="touchUpInside" id="GyM-WA-TZM"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="84" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ICH-P5-NfB">
-                                <rect key="frame" x="138" y="508" width="30" height="30"/>
+                            <button opaque="NO" tag="84" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ICH-P5-NfB">
+                                <rect key="frame" x="137" y="509" width="27" height="27"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
                                     <action selector="placing_ships_action:" destination="FC4-2w-cz5" eventType="touchUpInside" id="6Ae-WD-Tas"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="85" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DVE-5G-E9h">
-                                <rect key="frame" x="169" y="508" width="30" height="30"/>
+                            <button opaque="NO" tag="85" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DVE-5G-E9h">
+                                <rect key="frame" x="168" y="509" width="27" height="27"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
                                     <action selector="placing_ships_action:" destination="FC4-2w-cz5" eventType="touchUpInside" id="rRp-Q9-jaW"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="86" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ree-V2-g3v">
-                                <rect key="frame" x="200" y="508" width="30" height="30"/>
+                            <button opaque="NO" tag="86" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ree-V2-g3v">
+                                <rect key="frame" x="199" y="509" width="27" height="27"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
                                     <action selector="placing_ships_action:" destination="FC4-2w-cz5" eventType="touchUpInside" id="Aed-kt-kvN"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="87" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YBQ-Yg-8d2">
-                                <rect key="frame" x="231" y="508" width="30" height="30"/>
+                            <button opaque="NO" tag="87" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YBQ-Yg-8d2">
+                                <rect key="frame" x="230" y="509" width="27" height="27"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
                                     <action selector="placing_ships_action:" destination="FC4-2w-cz5" eventType="touchUpInside" id="FPm-tt-yLc"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="88" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ac7-GT-bEk">
-                                <rect key="frame" x="262" y="508" width="30" height="30"/>
+                            <button opaque="NO" tag="88" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ac7-GT-bEk">
+                                <rect key="frame" x="261" y="509" width="27" height="27"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
                                     <action selector="placing_ships_action:" destination="FC4-2w-cz5" eventType="touchUpInside" id="TK0-a9-cqo"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="89" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sbr-F9-JVR">
-                                <rect key="frame" x="293" y="508" width="30" height="30"/>
+                            <button opaque="NO" tag="89" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sbr-F9-JVR">
+                                <rect key="frame" x="292" y="509" width="27" height="27"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
                                     <action selector="placing_ships_action:" destination="FC4-2w-cz5" eventType="touchUpInside" id="H0e-3u-xqA"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="90" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pqX-Qh-Yi0">
-                                <rect key="frame" x="323" y="508" width="30" height="30"/>
+                            <button opaque="NO" tag="90" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pqX-Qh-Yi0">
+                                <rect key="frame" x="322" y="509" width="27" height="27"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
                                     <action selector="placing_ships_action:" destination="FC4-2w-cz5" eventType="touchUpInside" id="eTu-Bh-kx9"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="72" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zNI-nA-Gaz">
-                                <rect key="frame" x="76" y="476" width="30" height="30"/>
+                            <button opaque="NO" tag="72" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zNI-nA-Gaz">
+                                <rect key="frame" x="75" y="479" width="27" height="27"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
                                     <action selector="placing_ships_action:" destination="FC4-2w-cz5" eventType="touchUpInside" id="LSu-HW-RIk"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="73" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xEX-SS-wIH">
-                                <rect key="frame" x="107" y="476" width="30" height="30"/>
+                            <button opaque="NO" tag="73" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xEX-SS-wIH">
+                                <rect key="frame" x="107" y="479" width="27" height="27"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
                                     <action selector="placing_ships_action:" destination="FC4-2w-cz5" eventType="touchUpInside" id="d0M-Fz-EEp"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="74" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xsa-1V-Wgp">
-                                <rect key="frame" x="138" y="476" width="30" height="30"/>
+                            <button opaque="NO" tag="74" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xsa-1V-Wgp">
+                                <rect key="frame" x="137" y="479" width="27" height="27"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
                                     <action selector="placing_ships_action:" destination="FC4-2w-cz5" eventType="touchUpInside" id="7Gz-xx-QtP"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="75" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nMJ-ci-GMM">
-                                <rect key="frame" x="169" y="476" width="30" height="30"/>
+                            <button opaque="NO" tag="75" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nMJ-ci-GMM">
+                                <rect key="frame" x="168" y="479" width="27" height="27"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
                                     <action selector="placing_ships_action:" destination="FC4-2w-cz5" eventType="touchUpInside" id="LzR-IK-2mD"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="76" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kni-v5-GLU">
-                                <rect key="frame" x="200" y="476" width="30" height="30"/>
+                            <button opaque="NO" tag="76" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kni-v5-GLU">
+                                <rect key="frame" x="199" y="479" width="27" height="27"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
                                     <action selector="placing_ships_action:" destination="FC4-2w-cz5" eventType="touchUpInside" id="6tr-l0-bOj"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="77" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KAS-nf-RGI">
-                                <rect key="frame" x="231" y="476" width="30" height="30"/>
+                            <button opaque="NO" tag="77" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KAS-nf-RGI">
+                                <rect key="frame" x="230" y="479" width="27" height="27"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
                                     <action selector="placing_ships_action:" destination="FC4-2w-cz5" eventType="touchUpInside" id="Jfd-hx-i8k"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="78" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Ha-3e-5Hh">
-                                <rect key="frame" x="262" y="476" width="30" height="30"/>
+                            <button opaque="NO" tag="78" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Ha-3e-5Hh">
+                                <rect key="frame" x="261" y="479" width="27" height="27"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
                                     <action selector="placing_ships_action:" destination="FC4-2w-cz5" eventType="touchUpInside" id="Q9g-yW-f24"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="79" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JLW-jQ-tye">
-                                <rect key="frame" x="293" y="476" width="30" height="30"/>
+                            <button opaque="NO" tag="79" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JLW-jQ-tye">
+                                <rect key="frame" x="292" y="479" width="27" height="27"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
                                     <action selector="placing_ships_action:" destination="FC4-2w-cz5" eventType="touchUpInside" id="E7L-wd-xuh"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="80" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZAt-Te-63A">
-                                <rect key="frame" x="323" y="475" width="30" height="30"/>
+                            <button opaque="NO" tag="80" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZAt-Te-63A">
+                                <rect key="frame" x="322" y="479" width="27" height="27"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
                                     <action selector="placing_ships_action:" destination="FC4-2w-cz5" eventType="touchUpInside" id="Ho1-Xo-1X2"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="53" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9yO-VV-iiB">
-                                <rect key="frame" x="107" y="414" width="30" height="30"/>
+                            <button opaque="NO" tag="53" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9yO-VV-iiB">
+                                <rect key="frame" x="107" y="416" width="27" height="27"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
                                     <action selector="placing_ships_action:" destination="FC4-2w-cz5" eventType="touchUpInside" id="gZB-Gc-sDT"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="54" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4vZ-f9-PBc">
-                                <rect key="frame" x="138" y="414" width="30" height="30"/>
+                            <button opaque="NO" tag="54" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4vZ-f9-PBc">
+                                <rect key="frame" x="137" y="416" width="27" height="27"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
                                     <action selector="placing_ships_action:" destination="FC4-2w-cz5" eventType="touchUpInside" id="B2Q-XD-VdP"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="55" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rXI-aU-FVs">
-                                <rect key="frame" x="169" y="414" width="30" height="30"/>
+                            <button opaque="NO" tag="55" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rXI-aU-FVs">
+                                <rect key="frame" x="168" y="416" width="27" height="27"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
                                     <action selector="placing_ships_action:" destination="FC4-2w-cz5" eventType="touchUpInside" id="VPL-X4-Txd"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="56" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p0D-y7-Vj2">
-                                <rect key="frame" x="200" y="414" width="30" height="30"/>
+                            <button opaque="NO" tag="56" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p0D-y7-Vj2">
+                                <rect key="frame" x="199" y="416" width="27" height="27"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
                                     <action selector="placing_ships_action:" destination="FC4-2w-cz5" eventType="touchUpInside" id="GQl-I2-RUR"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="57" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sh7-eU-G6k">
-                                <rect key="frame" x="231" y="414" width="30" height="30"/>
+                            <button opaque="NO" tag="57" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sh7-eU-G6k">
+                                <rect key="frame" x="230" y="416" width="27" height="27"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
                                     <action selector="placing_ships_action:" destination="FC4-2w-cz5" eventType="touchUpInside" id="f25-7L-YEF"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="58" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wch-2F-CSn">
-                                <rect key="frame" x="262" y="414" width="30" height="30"/>
+                            <button opaque="NO" tag="58" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wch-2F-CSn">
+                                <rect key="frame" x="261" y="416" width="27" height="27"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
                                     <action selector="placing_ships_action:" destination="FC4-2w-cz5" eventType="touchUpInside" id="pW4-a6-dQn"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="59" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BqB-fE-QOc">
-                                <rect key="frame" x="293" y="414" width="30" height="30"/>
+                            <button opaque="NO" tag="59" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BqB-fE-QOc">
+                                <rect key="frame" x="292" y="416" width="27" height="27"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
                                     <action selector="placing_ships_action:" destination="FC4-2w-cz5" eventType="touchUpInside" id="xhb-kY-wn7"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="60" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GnU-s6-hVC">
-                                <rect key="frame" x="323" y="414" width="30" height="30"/>
+                            <button opaque="NO" tag="60" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GnU-s6-hVC">
+                                <rect key="frame" x="322" y="416" width="27" height="27"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
                                     <action selector="placing_ships_action:" destination="FC4-2w-cz5" eventType="touchUpInside" id="wU6-O2-1jN"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="31" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qey-na-y03">
-                                <rect key="frame" x="43" y="352" width="29" height="30"/>
+                            <button opaque="NO" tag="31" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qey-na-y03">
+                                <rect key="frame" x="44" y="354" width="27" height="27"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
                                     <action selector="placing_ships_action:" destination="FC4-2w-cz5" eventType="touchUpInside" id="akI-26-tpv"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="32" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J3A-68-NKo">
-                                <rect key="frame" x="76" y="352" width="30" height="30"/>
+                            <button opaque="NO" tag="32" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J3A-68-NKo">
+                                <rect key="frame" x="75" y="354" width="27" height="27"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
                                     <action selector="placing_ships_action:" destination="FC4-2w-cz5" eventType="touchUpInside" id="V9C-EM-WSg"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="33" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1IR-Zs-46a">
-                                <rect key="frame" x="107" y="352" width="30" height="30"/>
+                            <button opaque="NO" tag="33" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1IR-Zs-46a">
+                                <rect key="frame" x="106" y="354" width="27" height="27"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
                                     <action selector="placing_ships_action:" destination="FC4-2w-cz5" eventType="touchUpInside" id="AgA-1u-ZUL"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="34" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yxS-HO-Nae">
-                                <rect key="frame" x="138" y="352" width="30" height="30"/>
+                            <button opaque="NO" tag="34" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yxS-HO-Nae">
+                                <rect key="frame" x="137" y="354" width="27" height="27"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
                                     <action selector="placing_ships_action:" destination="FC4-2w-cz5" eventType="touchUpInside" id="S1D-ns-cAD"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="35" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9J4-jr-9bf">
-                                <rect key="frame" x="169" y="352" width="30" height="30"/>
+                            <button opaque="NO" tag="35" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9J4-jr-9bf">
+                                <rect key="frame" x="168" y="354" width="27" height="27"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
                                     <action selector="placing_ships_action:" destination="FC4-2w-cz5" eventType="touchUpInside" id="Btm-qL-s50"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="36" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GEs-X5-xci">
-                                <rect key="frame" x="200" y="352" width="30" height="30"/>
+                            <button opaque="NO" tag="36" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GEs-X5-xci">
+                                <rect key="frame" x="199" y="354" width="27" height="27"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
                                     <action selector="placing_ships_action:" destination="FC4-2w-cz5" eventType="touchUpInside" id="sHh-8s-AyT"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="37" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="65L-Ey-tde">
-                                <rect key="frame" x="231" y="352" width="30" height="30"/>
+                            <button opaque="NO" tag="37" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="65L-Ey-tde">
+                                <rect key="frame" x="230" y="354" width="27" height="27"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
                                     <action selector="placing_ships_action:" destination="FC4-2w-cz5" eventType="touchUpInside" id="LH7-mF-Yod"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="38" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tOM-ZX-N0P">
-                                <rect key="frame" x="262" y="352" width="30" height="30"/>
+                            <button opaque="NO" tag="38" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tOM-ZX-N0P">
+                                <rect key="frame" x="261" y="354" width="27" height="27"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
                                     <action selector="placing_ships_action:" destination="FC4-2w-cz5" eventType="touchUpInside" id="YJW-Fp-AVb"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="39" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Zo-kY-XIn">
-                                <rect key="frame" x="293" y="352" width="30" height="30"/>
+                            <button opaque="NO" tag="39" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Zo-kY-XIn">
+                                <rect key="frame" x="292" y="354" width="27" height="27"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
                                     <action selector="placing_ships_action:" destination="FC4-2w-cz5" eventType="touchUpInside" id="ejd-Kb-Me3"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="40" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0lL-5p-KMm">
-                                <rect key="frame" x="323" y="352" width="30" height="30"/>
+                            <button opaque="NO" tag="40" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0lL-5p-KMm">
+                                <rect key="frame" x="322" y="354" width="27" height="27"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
                                     <action selector="placing_ships_action:" destination="FC4-2w-cz5" eventType="touchUpInside" id="Py9-Yx-btn"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="21" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="68x-ST-HYR">
-                                <rect key="frame" x="43" y="321" width="29" height="30"/>
+                            <button opaque="NO" tag="21" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="68x-ST-HYR">
+                                <rect key="frame" x="44" y="323" width="27" height="27"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
                                     <action selector="placing_ships_action:" destination="FC4-2w-cz5" eventType="touchUpInside" id="5Uc-wF-B3f"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="22" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SFf-kP-YIW">
-                                <rect key="frame" x="76" y="321" width="30" height="30"/>
+                            <button opaque="NO" tag="22" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SFf-kP-YIW">
+                                <rect key="frame" x="75" y="323" width="27" height="27"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
                                     <action selector="placing_ships_action:" destination="FC4-2w-cz5" eventType="touchUpInside" id="gcn-T5-Dke"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="23" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gck-ah-0Bm">
-                                <rect key="frame" x="107" y="321" width="30" height="30"/>
+                            <button opaque="NO" tag="23" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gck-ah-0Bm">
+                                <rect key="frame" x="106" y="323" width="27" height="27"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
                                     <action selector="placing_ships_action:" destination="FC4-2w-cz5" eventType="touchUpInside" id="Rfe-1r-ufs"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="24" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lU4-Ac-JwI">
-                                <rect key="frame" x="138" y="321" width="30" height="30"/>
+                            <button opaque="NO" tag="24" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lU4-Ac-JwI">
+                                <rect key="frame" x="137" y="323" width="27" height="27"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
                                     <action selector="placing_ships_action:" destination="FC4-2w-cz5" eventType="touchUpInside" id="O0D-UQ-BXP"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="25" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DcR-7h-JT5">
-                                <rect key="frame" x="169" y="321" width="30" height="30"/>
+                            <button opaque="NO" tag="25" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DcR-7h-JT5">
+                                <rect key="frame" x="168" y="323" width="27" height="27"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
                                     <action selector="placing_ships_action:" destination="FC4-2w-cz5" eventType="touchUpInside" id="nt8-95-7Dw"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="26" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eSB-jd-0pe">
-                                <rect key="frame" x="200" y="321" width="30" height="30"/>
+                            <button opaque="NO" tag="26" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eSB-jd-0pe">
+                                <rect key="frame" x="199" y="323" width="27" height="27"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
                                     <action selector="placing_ships_action:" destination="FC4-2w-cz5" eventType="touchUpInside" id="beK-pf-UUx"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="27" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Iz-US-fQQ">
-                                <rect key="frame" x="231" y="321" width="30" height="30"/>
+                            <button opaque="NO" tag="27" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Iz-US-fQQ">
+                                <rect key="frame" x="230" y="323" width="27" height="27"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
                                     <action selector="placing_ships_action:" destination="FC4-2w-cz5" eventType="touchUpInside" id="Rfy-Yj-ueQ"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="28" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D7Q-31-lyD">
-                                <rect key="frame" x="262" y="321" width="30" height="30"/>
+                            <button opaque="NO" tag="28" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D7Q-31-lyD">
+                                <rect key="frame" x="261" y="323" width="27" height="27"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
                                     <action selector="placing_ships_action:" destination="FC4-2w-cz5" eventType="touchUpInside" id="6wK-il-p5l"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="29" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gdh-PT-ouq">
-                                <rect key="frame" x="293" y="321" width="30" height="30"/>
+                            <button opaque="NO" tag="29" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gdh-PT-ouq">
+                                <rect key="frame" x="292" y="323" width="27" height="27"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
                                     <action selector="placing_ships_action:" destination="FC4-2w-cz5" eventType="touchUpInside" id="vMC-yO-Tn3"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="30" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W0w-fw-5sa">
-                                <rect key="frame" x="323" y="321" width="30" height="30"/>
+                            <button opaque="NO" tag="30" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W0w-fw-5sa">
+                                <rect key="frame" x="322" y="323" width="27" height="27"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
                                     <action selector="placing_ships_action:" destination="FC4-2w-cz5" eventType="touchUpInside" id="gd3-SH-Ct2"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="16" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="biV-Ar-1wH">
-                                <rect key="frame" x="200" y="290" width="30" height="30"/>
+                            <button opaque="NO" tag="16" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="biV-Ar-1wH">
+                                <rect key="frame" x="199" y="292" width="27" height="27"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
                                     <action selector="placing_ships_action:" destination="FC4-2w-cz5" eventType="touchUpInside" id="wNC-DA-fuf"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="17" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3TM-sd-AnE">
-                                <rect key="frame" x="231" y="290" width="30" height="30"/>
+                            <button opaque="NO" tag="17" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3TM-sd-AnE">
+                                <rect key="frame" x="230" y="292" width="27" height="27"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
                                     <action selector="placing_ships_action:" destination="FC4-2w-cz5" eventType="touchUpInside" id="zqc-hm-j5V"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="18" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z3D-U5-h68">
-                                <rect key="frame" x="262" y="290" width="30" height="30"/>
+                            <button opaque="NO" tag="18" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z3D-U5-h68">
+                                <rect key="frame" x="261" y="292" width="27" height="27"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
                                     <action selector="placing_ships_action:" destination="FC4-2w-cz5" eventType="touchUpInside" id="030-8K-qsK"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="19" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mBS-fd-TNm">
-                                <rect key="frame" x="293" y="290" width="30" height="30"/>
+                            <button opaque="NO" tag="19" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mBS-fd-TNm">
+                                <rect key="frame" x="292" y="292" width="27" height="27"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
                                     <action selector="placing_ships_action:" destination="FC4-2w-cz5" eventType="touchUpInside" id="det-xZ-GQ4"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="20" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dhz-ee-QmC">
-                                <rect key="frame" x="323" y="290" width="30" height="30"/>
+                            <button opaque="NO" tag="20" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dhz-ee-QmC">
+                                <rect key="frame" x="322" y="292" width="27" height="27"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
                                     <action selector="placing_ships_action:" destination="FC4-2w-cz5" eventType="touchUpInside" id="982-c5-bqJ"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="14" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2gW-TY-lnD">
-                                <rect key="frame" x="138" y="290" width="30" height="30"/>
+                            <button opaque="NO" tag="14" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2gW-TY-lnD">
+                                <rect key="frame" x="137" y="292" width="27" height="27"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
                                     <action selector="placing_ships_action:" destination="FC4-2w-cz5" eventType="touchUpInside" id="QW1-OR-Flq"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="15" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gHw-Je-bcV">
-                                <rect key="frame" x="169" y="290" width="30" height="30"/>
+                            <button opaque="NO" tag="15" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gHw-Je-bcV">
+                                <rect key="frame" x="168" y="292" width="27" height="27"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
                                     <action selector="placing_ships_action:" destination="FC4-2w-cz5" eventType="touchUpInside" id="AvP-co-4DQ"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="12" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1P4-8U-lqQ">
-                                <rect key="frame" x="76" y="290" width="30" height="30"/>
+                            <button opaque="NO" tag="12" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1P4-8U-lqQ">
+                                <rect key="frame" x="75" y="292" width="27" height="27"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
                                     <action selector="placing_ships_action:" destination="FC4-2w-cz5" eventType="touchUpInside" id="Zj8-0y-Xaa"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="13" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i6A-ZQ-roc">
-                                <rect key="frame" x="107" y="290" width="30" height="30"/>
+                            <button opaque="NO" tag="13" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i6A-ZQ-roc">
+                                <rect key="frame" x="106" y="292" width="27" height="27"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
                                     <action selector="placing_ships_action:" destination="FC4-2w-cz5" eventType="touchUpInside" id="RXj-8K-OCN"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="11" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yo3-OF-Ge2">
-                                <rect key="frame" x="43" y="290" width="29" height="30"/>
+                            <button opaque="NO" tag="11" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yo3-OF-Ge2">
+                                <rect key="frame" x="44" y="292" width="27" height="27"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
                                     <action selector="placing_ships_action:" destination="FC4-2w-cz5" eventType="touchUpInside" id="IFj-m0-zwq"/>
                                 </connections>
@@ -702,182 +770,212 @@
                                     <action selector="placing_ships_action:" destination="FC4-2w-cz5" eventType="touchUpInside" id="AW8-xm-gaE"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dwg-ON-0bx">
-                                <rect key="frame" x="107" y="260" width="30" height="31"/>
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dwg-ON-0bx">
+                                <rect key="frame" x="106" y="262" width="27" height="27"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
                                     <action selector="placing_ships_action:" destination="FC4-2w-cz5" eventType="touchUpInside" id="9fY-wn-yJj"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZvK-y4-DxP">
-                                <rect key="frame" x="138" y="260" width="30" height="31"/>
+                            <button opaque="NO" tag="4" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZvK-y4-DxP">
+                                <rect key="frame" x="137" y="262" width="27" height="27"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
                                     <action selector="placing_ships_action:" destination="FC4-2w-cz5" eventType="touchUpInside" id="5tp-mN-Swl"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mjE-tY-eAA">
-                                <rect key="frame" x="169" y="260" width="30" height="31"/>
+                            <button opaque="NO" tag="5" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mjE-tY-eAA">
+                                <rect key="frame" x="168" y="262" width="27" height="27"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
                                     <action selector="placing_ships_action:" destination="FC4-2w-cz5" eventType="touchUpInside" id="SSq-MU-bDt"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NEp-sq-iOr">
-                                <rect key="frame" x="200" y="260" width="30" height="31"/>
+                            <button opaque="NO" tag="6" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NEp-sq-iOr">
+                                <rect key="frame" x="199" y="262" width="27" height="27"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
                                     <action selector="placing_ships_action:" destination="FC4-2w-cz5" eventType="touchUpInside" id="W7Q-bj-gZD"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4HJ-Gc-5az">
-                                <rect key="frame" x="231" y="260" width="30" height="31"/>
+                            <button opaque="NO" tag="7" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4HJ-Gc-5az">
+                                <rect key="frame" x="230" y="262" width="27" height="27"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
                                     <action selector="placing_ships_action:" destination="FC4-2w-cz5" eventType="touchUpInside" id="Ih9-R1-MhD"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qTr-21-eHd">
-                                <rect key="frame" x="262" y="260" width="30" height="31"/>
+                            <button opaque="NO" tag="8" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qTr-21-eHd">
+                                <rect key="frame" x="260" y="262" width="27" height="27"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
                                     <action selector="placing_ships_action:" destination="FC4-2w-cz5" eventType="touchUpInside" id="x6Q-Vc-Gei"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="9" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rnc-Mh-yhR">
-                                <rect key="frame" x="293" y="260" width="30" height="31"/>
+                            <button opaque="NO" tag="9" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rnc-Mh-yhR">
+                                <rect key="frame" x="292" y="262" width="27" height="27"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
                                     <action selector="placing_ships_action:" destination="FC4-2w-cz5" eventType="touchUpInside" id="tWN-po-c7D"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="10" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yWw-0f-3bt">
-                                <rect key="frame" x="323" y="260" width="30" height="31"/>
+                            <button opaque="NO" tag="10" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yWw-0f-3bt">
+                                <rect key="frame" x="322" y="262" width="27" height="27"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
                                     <action selector="placing_ships_action:" destination="FC4-2w-cz5" eventType="touchUpInside" id="njo-4U-aAU"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="41" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YFg-ep-t5N">
-                                <rect key="frame" x="43" y="383" width="29" height="30"/>
+                            <button opaque="NO" tag="41" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YFg-ep-t5N">
+                                <rect key="frame" x="44" y="385" width="27" height="27"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
                                     <action selector="placing_ships_action:" destination="FC4-2w-cz5" eventType="touchUpInside" id="Vat-gz-HQh"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="51" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cia-mb-euL">
-                                <rect key="frame" x="43" y="414" width="29" height="30"/>
+                            <button opaque="NO" tag="51" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cia-mb-euL">
+                                <rect key="frame" x="44" y="416" width="27" height="27"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
                                     <action selector="placing_ships_action:" destination="FC4-2w-cz5" eventType="touchUpInside" id="HdW-8r-BKQ"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="61" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mEd-M5-PpB">
-                                <rect key="frame" x="43" y="445" width="29" height="30"/>
+                            <button opaque="NO" tag="61" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mEd-M5-PpB">
+                                <rect key="frame" x="44" y="447" width="27" height="27"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
                                     <action selector="placing_ships_action:" destination="FC4-2w-cz5" eventType="touchUpInside" id="dLY-zh-9R6"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="62" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g73-ji-5yu">
-                                <rect key="frame" x="76" y="445" width="30" height="30"/>
+                            <button opaque="NO" tag="62" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g73-ji-5yu">
+                                <rect key="frame" x="75" y="447" width="27" height="27"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
                                     <action selector="placing_ships_action:" destination="FC4-2w-cz5" eventType="touchUpInside" id="hR9-jF-COC"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="63" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i8v-fb-tn2">
-                                <rect key="frame" x="107" y="445" width="30" height="30"/>
+                            <button opaque="NO" tag="63" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i8v-fb-tn2">
+                                <rect key="frame" x="107" y="447" width="27" height="27"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
                                     <action selector="placing_ships_action:" destination="FC4-2w-cz5" eventType="touchUpInside" id="QFd-I7-Kg6"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="64" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rYu-Ez-Vdu">
-                                <rect key="frame" x="138" y="445" width="30" height="30"/>
+                            <button opaque="NO" tag="64" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rYu-Ez-Vdu">
+                                <rect key="frame" x="137" y="447" width="27" height="27"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
                                     <action selector="placing_ships_action:" destination="FC4-2w-cz5" eventType="touchUpInside" id="wAP-sk-SNl"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="65" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AQ0-tT-Un7">
-                                <rect key="frame" x="169" y="445" width="30" height="30"/>
+                            <button opaque="NO" tag="65" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AQ0-tT-Un7">
+                                <rect key="frame" x="168" y="447" width="27" height="27"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
                                     <action selector="placing_ships_action:" destination="FC4-2w-cz5" eventType="touchUpInside" id="Eqa-Mc-cHf"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="66" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="alD-SL-xmC">
-                                <rect key="frame" x="200" y="445" width="30" height="30"/>
+                            <button opaque="NO" tag="66" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="alD-SL-xmC">
+                                <rect key="frame" x="199" y="447" width="27" height="27"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
                                     <action selector="placing_ships_action:" destination="FC4-2w-cz5" eventType="touchUpInside" id="UCn-Gl-6gW"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="67" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MaX-ro-xhh">
-                                <rect key="frame" x="231" y="445" width="30" height="30"/>
+                            <button opaque="NO" tag="67" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MaX-ro-xhh">
+                                <rect key="frame" x="230" y="447" width="27" height="27"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
                                     <action selector="placing_ships_action:" destination="FC4-2w-cz5" eventType="touchUpInside" id="ojh-kv-YxL"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="68" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nTv-Im-bZK">
-                                <rect key="frame" x="262" y="445" width="30" height="30"/>
+                            <button opaque="NO" tag="68" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nTv-Im-bZK">
+                                <rect key="frame" x="261" y="447" width="27" height="27"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
                                     <action selector="placing_ships_action:" destination="FC4-2w-cz5" eventType="touchUpInside" id="qUm-Dt-8SM"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="69" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ALY-1r-LNZ">
-                                <rect key="frame" x="293" y="445" width="30" height="30"/>
+                            <button opaque="NO" tag="69" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ALY-1r-LNZ">
+                                <rect key="frame" x="292" y="447" width="27" height="27"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
                                     <action selector="placing_ships_action:" destination="FC4-2w-cz5" eventType="touchUpInside" id="l8n-OC-jFJ"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="70" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="poK-LL-Dq7">
-                                <rect key="frame" x="323" y="445" width="30" height="30"/>
+                            <button opaque="NO" tag="70" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="poK-LL-Dq7">
+                                <rect key="frame" x="322" y="447" width="27" height="27"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
                                     <action selector="placing_ships_action:" destination="FC4-2w-cz5" eventType="touchUpInside" id="BGp-0h-7ck"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="52" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FCS-n2-Xv1">
-                                <rect key="frame" x="76" y="414" width="30" height="30"/>
+                            <button opaque="NO" tag="52" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FCS-n2-Xv1">
+                                <rect key="frame" x="75" y="416" width="27" height="27"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
                                     <action selector="placing_ships_action:" destination="FC4-2w-cz5" eventType="touchUpInside" id="k0N-En-w1o"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="42" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KZs-Vi-A6r">
-                                <rect key="frame" x="76" y="383" width="30" height="30"/>
+                            <button opaque="NO" tag="42" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KZs-Vi-A6r">
+                                <rect key="frame" x="75" y="385" width="27" height="27"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
                                     <action selector="placing_ships_action:" destination="FC4-2w-cz5" eventType="touchUpInside" id="k7L-Y4-QyP"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="43" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hf9-eA-vhL">
-                                <rect key="frame" x="107" y="383" width="30" height="30"/>
+                            <button opaque="NO" tag="43" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hf9-eA-vhL">
+                                <rect key="frame" x="106" y="385" width="27" height="27"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
                                     <action selector="placing_ships_action:" destination="FC4-2w-cz5" eventType="touchUpInside" id="CTz-yt-vQh"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="44" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VuG-dL-A3J">
-                                <rect key="frame" x="138" y="383" width="30" height="30"/>
+                            <button opaque="NO" tag="44" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VuG-dL-A3J">
+                                <rect key="frame" x="137" y="385" width="27" height="27"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
                                     <action selector="placing_ships_action:" destination="FC4-2w-cz5" eventType="touchUpInside" id="v0I-Ba-95M"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="45" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SV2-zl-nRp">
-                                <rect key="frame" x="169" y="383" width="30" height="30"/>
+                            <button opaque="NO" tag="45" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SV2-zl-nRp">
+                                <rect key="frame" x="168" y="385" width="27" height="27"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
                                     <action selector="placing_ships_action:" destination="FC4-2w-cz5" eventType="touchUpInside" id="Ypz-TZ-UBt"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="46" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rr2-RA-VAo">
-                                <rect key="frame" x="200" y="383" width="30" height="30"/>
+                            <button opaque="NO" tag="46" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rr2-RA-VAo">
+                                <rect key="frame" x="199" y="385" width="27" height="27"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
                                     <action selector="placing_ships_action:" destination="FC4-2w-cz5" eventType="touchUpInside" id="2Xg-nS-iGz"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="47" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nAh-8R-QYD">
-                                <rect key="frame" x="231" y="383" width="30" height="30"/>
+                            <button opaque="NO" tag="47" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nAh-8R-QYD">
+                                <rect key="frame" x="230" y="385" width="27" height="27"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
                                     <action selector="placing_ships_action:" destination="FC4-2w-cz5" eventType="touchUpInside" id="PXK-cx-DWn"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="48" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lwl-yf-MXh">
-                                <rect key="frame" x="262" y="383" width="30" height="30"/>
+                            <button opaque="NO" tag="48" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lwl-yf-MXh">
+                                <rect key="frame" x="261" y="385" width="27" height="27"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
                                     <action selector="placing_ships_action:" destination="FC4-2w-cz5" eventType="touchUpInside" id="9fd-j1-zbw"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="49" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L2C-oU-qVs">
-                                <rect key="frame" x="293" y="383" width="30" height="30"/>
+                            <button opaque="NO" tag="49" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L2C-oU-qVs">
+                                <rect key="frame" x="292" y="385" width="27" height="27"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
                                     <action selector="placing_ships_action:" destination="FC4-2w-cz5" eventType="touchUpInside" id="fp1-iT-kqa"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="50" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hFc-aP-dhI">
-                                <rect key="frame" x="323" y="383" width="30" height="30"/>
+                            <button opaque="NO" tag="50" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hFc-aP-dhI">
+                                <rect key="frame" x="322" y="385" width="27" height="27"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
                                     <action selector="placing_ships_action:" destination="FC4-2w-cz5" eventType="touchUpInside" id="5Gh-5G-JZF"/>
                                 </connections>

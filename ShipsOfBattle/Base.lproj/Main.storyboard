@@ -1031,11 +1031,11 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select 5 spaces for your carrier" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OkW-VJ-j4Z">
-                                <rect key="frame" x="28" y="151" width="319" height="29"/>
+                                <rect key="frame" x="34.333333333333343" y="151" width="306.33333333333326" height="29"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="29" id="MK2-Fs-Wbg"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -1111,7 +1111,6 @@
                             <constraint firstItem="sh7-eU-G6k" firstAttribute="firstBaseline" secondItem="GnU-s6-hVC" secondAttribute="firstBaseline" id="24T-J7-IIL"/>
                             <constraint firstItem="2pp-F5-xx1" firstAttribute="top" secondItem="mEd-M5-PpB" secondAttribute="bottom" constant="5" id="25j-lk-jup"/>
                             <constraint firstItem="TUS-GK-RVD" firstAttribute="leading" secondItem="yUs-BW-9lK" secondAttribute="leading" constant="101" id="28T-Ok-3vM"/>
-                            <constraint firstItem="OkW-VJ-j4Z" firstAttribute="leading" secondItem="yUs-BW-9lK" secondAttribute="leading" constant="28" id="29r-0A-6vD"/>
                             <constraint firstItem="gck-ah-0Bm" firstAttribute="leading" secondItem="1IR-Zs-46a" secondAttribute="leading" id="2FY-Va-h6W"/>
                             <constraint firstItem="ac7-GT-bEk" firstAttribute="firstBaseline" secondItem="DVE-5G-E9h" secondAttribute="firstBaseline" id="2Iv-7U-SbC"/>
                             <constraint firstItem="g73-ji-5yu" firstAttribute="top" secondItem="i8v-fb-tn2" secondAttribute="top" id="2Z0-DX-eVC"/>

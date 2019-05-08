@@ -309,6 +309,8 @@ class GameViewController: UIViewController, MCSessionDelegate, MCBrowserViewCont
                         // state: miss
                         tmpButton.setTitle("x", for: .normal)
                         tmpButton.setTitleColor(UIColor.gray, for: .normal)
+                    } else if userAttacks[i] == 0 {
+                        tmpButton.setTitle("", for: .normal)
                     }
                 }
             } else {
@@ -319,8 +321,10 @@ class GameViewController: UIViewController, MCSessionDelegate, MCBrowserViewCont
                     let tmpButton = self.view.viewWithTag(i+1) as! UIButton
                     if userState[i] == 0 {
                         tmpButton.backgroundColor = UIColor.white
+                        tmpButton.setTitle("", for: .normal)
                     } else if userState[i] == 2 {
                         tmpButton.backgroundColor = UIColor.black
+                        tmpButton.setTitle("", for: .normal)
                     } else if userState[i] == 3 {
                         tmpButton.backgroundColor = UIColor.black
                         tmpButton.setTitle("x", for: .normal)
@@ -349,7 +353,13 @@ class GameViewController: UIViewController, MCSessionDelegate, MCBrowserViewCont
         let check = userState.firstIndex(of: 2)
         if check == nil { // win
             // TODO: handle victory
-            
+            placingLabel.text = "Winner: Opponent"
+            oppReady = false
+            myTurn = false
+            let dict: [String: String] = ["winner": "you"]
+            if sendData(dictionaryWithData: dict) == false{
+                print("winner failed to send")
+            }
         }
     }
     
@@ -466,6 +476,12 @@ class GameViewController: UIViewController, MCSessionDelegate, MCBrowserViewCont
                     self.swapTurn(whosTurn: true)
                     self.oppAttacks = [0, 0, 0, 0, 0]
                     self.checkForWin()
+                } else if (dataDictionary?["winner"] != nil) {
+                    if dataDictionary?["turn"] as! String == "you" {
+                        self.placingLabel.text = "Winner: You!"
+                        self.oppReady = false
+                        self.myTurn = false
+                    }
                 }
             } catch let error as NSError {
                 let ac = UIAlertController(title: "Send error", message: error.localizedDescription, preferredStyle: .alert)

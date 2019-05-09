@@ -267,22 +267,22 @@ class GameViewController: UIViewController, MCSessionDelegate, MCBrowserViewCont
                 }
                 if selectedSpaces == 5 {
                     // check for hit/miss
-                    for space in attacks {
-                        if oppState[space] == 2 {
+                    for i in 0..<attacks.count {
+                        if oppState[attacks[i]] == 2 {
                             // hit
-                            userAttacks[space] = 2
-                        } else if oppState[space] == 0 {
+                            userAttacks[attacks[i]] = 2
+                        } else if oppState[attacks[i]] == 0 {
                             // miss
-                            userAttacks[space] = 3
+                            userAttacks[attacks[i]] = 3
                         }
                     }
                     myView = true
                     switch_view_action((Any).self)
-                    let dict: [String: [Int]] = ["attacks": userAttacks]
+                    let dict: [String: [Int]] = ["attacks": attacks]
                     if sendData(dictionaryWithData: dict) == false{
                         print("attacks failed to send")
                     }
-                    userAttacks = [0, 0, 0, 0, 0]
+                    attacks = [0, 0, 0, 0, 0]
                     swapTurn(whosTurn: false)
                 }
             }

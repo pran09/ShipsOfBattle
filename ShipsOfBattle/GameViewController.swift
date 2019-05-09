@@ -477,7 +477,7 @@ class GameViewController: UIViewController, MCSessionDelegate, MCBrowserViewCont
                     self.oppAttacks = [0, 0, 0, 0, 0]
                     self.checkForWin()
                 } else if (dataDictionary?["winner"] != nil) {
-                    if dataDictionary?["turn"] as! String == "you" {
+                    if dataDictionary?["winner"] as! String == "you" {
                         self.placingLabel.text = "Winner: You!"
                         self.oppReady = false
                         self.myTurn = false

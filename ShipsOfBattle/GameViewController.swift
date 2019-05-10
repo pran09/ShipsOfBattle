@@ -23,6 +23,7 @@ class GameViewController: UIViewController, MCSessionDelegate, MCBrowserViewCont
     @IBOutlet var placingLabel: UILabel!
     @IBOutlet var turnLabel: UILabel!
     @IBOutlet var switchButton: UIButton!
+    @IBOutlet var actionButton: UIButton!
     var placeCount = 7
     var myTurn = false
     var myView = true
@@ -286,6 +287,9 @@ class GameViewController: UIViewController, MCSessionDelegate, MCBrowserViewCont
                     swapTurn(whosTurn: false)
                 }
             }
+        } else if (placeCount == -1) {
+            // TODO: Gather and send stats to be sent to stats viewController
+            // TODO: link to stats viewController
         }
     }
     @IBAction func switch_view_action(_ sender: Any) {
@@ -353,13 +357,21 @@ class GameViewController: UIViewController, MCSessionDelegate, MCBrowserViewCont
         let check = userState.firstIndex(of: 2)
         if check == nil { // win
             // TODO: handle victory
+            titleLabel.text = "Game Over"
             placingLabel.text = "Winner: Opponent"
-            oppReady = false
+//            oppReady = false
             myTurn = false
+            myView = false
+            switch_view_action((Any).self)
             let dict: [String: String] = ["winner": "you"]
             if sendData(dictionaryWithData: dict) == false{
                 print("winner failed to send")
             }
+            let ac = UIAlertController(title: "Winner: Opponent", message: "Your opponent has won the game, better luck next time!", preferredStyle: .alert)
+            ac.addAction(UIAlertAction(title: "OK", style: .default))
+            present(ac, animated: true)
+            placeCount -= 1
+            actionButton.setTitle("Finish", for: .normal)
         }
     }
     
@@ -478,9 +490,17 @@ class GameViewController: UIViewController, MCSessionDelegate, MCBrowserViewCont
                     self.checkForWin()
                 } else if (dataDictionary?["winner"] != nil) {
                     if dataDictionary?["winner"] as! String == "you" {
+                        self.titleLabel.text = "Game Over"
                         self.placingLabel.text = "Winner: You!"
-                        self.oppReady = false
+//                        self.oppReady = false
                         self.myTurn = false
+                        self.myView = true
+                        self.switch_view_action((Any).self)
+                        let ac = UIAlertController(title: "Winner: You!", message: "You won the game, nice job!", preferredStyle: .alert)
+                        ac.addAction(UIAlertAction(title: "OK", style: .default))
+                        self.present(ac, animated: true)
+                        self.placeCount -= 1
+                        self.actionButton.setTitle("Finish", for: .normal)
                     }
                 }
             } catch let error as NSError {

@@ -474,7 +474,7 @@ class GameViewController: UIViewController, MCSessionDelegate, MCBrowserViewCont
             actionButton.setTitle("Finish", for: .normal)
             print("hits: \(hits)")
             print("misses: \(misses)")
-            print("hitrate: \(100*hits/(hits + misses))")
+            print("hitrate: \(100*hits/(hits + misses))%")
         }
     }
     
@@ -620,7 +620,7 @@ class GameViewController: UIViewController, MCSessionDelegate, MCBrowserViewCont
                         self.actionButton.setTitle("Finish", for: .normal)
                         print("hits: \(self.hits)")
                         print("misses: \(self.misses)")
-                        print("hitrate: \(100*self.hits/(self.hits + self.misses))")
+                        print("hitrate: \(100*self.hits/(self.hits + self.misses))%")
                     }
                 }
             } catch let error as NSError {

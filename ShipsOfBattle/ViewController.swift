@@ -111,6 +111,9 @@ class ViewController: UIViewController, MCSessionDelegate, MCBrowserViewControll
             print("Not Connected: \(peerID.displayName)")
             DispatchQueue.main.async {
                 self.changeView(hide: true)
+                let ac = UIAlertController(title: "Lost Connection to Opponent", message: "The connection to your opponent was lost. Find another opponent", preferredStyle: .alert)
+                ac.addAction(UIAlertAction(title: "OK", style: .default))
+                self.present(ac, animated: true)
             }
         @unknown default:
             print("Unknown case")

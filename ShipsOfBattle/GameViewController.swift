@@ -25,16 +25,21 @@ class GameViewController: UIViewController, MCSessionDelegate, MCBrowserViewCont
     @IBOutlet var switchButton: UIButton!
     @IBOutlet var actionButton: UIButton!
     var placeCount = 7
+    var selectedAttacks = 0
     var myTurn = false
     var myView = true
     var start = false
     var oppReady = false
+    var hits = 0
+    var misses = 0
+    var hitRate = 0.0
     var userState = Array(repeating: 0, count: 100)
     var oppState = Array(repeating: 0, count: 100)
     var userAttacks = Array(repeating: 0, count: 100)
     var attacks = Array(repeating: 0, count: 5)
     var oppAttacks = Array(repeating: 0, count: 5)
-    
+    var prevAttacks = Array(repeating: 0, count: 5)
+    var prevOppAttacks = Array(repeating: 0, count: 5)
     
     @IBAction func placing_ships_action(_ sender: Any) {
         if ((userState[(sender as AnyObject).tag - 1] == 0) && (placeCount > 1)) {
@@ -52,9 +57,13 @@ class GameViewController: UIViewController, MCSessionDelegate, MCBrowserViewCont
                     userAttacks[(sender as AnyObject).tag - 1] = 1
                     (sender as! UIButton).setTitle("x", for: .normal)
                     (sender as! UIButton).setTitleColor(UIColor.blue, for: .normal)
+                    selectedAttacks += 1
+                    placingLabel.text = "Turn: Yours (\(selectedAttacks)/5)"
                 } else if userAttacks[(sender as AnyObject).tag - 1] == 1 {
                     userAttacks[(sender as AnyObject).tag - 1] = 0
                     (sender as! UIButton).setTitle("", for: .normal)
+                    selectedAttacks -= 1
+                    placingLabel.text = "Turn: Yours (\(selectedAttacks)/5)"
                 }
             }
         }
@@ -110,6 +119,10 @@ class GameViewController: UIViewController, MCSessionDelegate, MCBrowserViewCont
                         }
                         placingLabel.text = "Select 4 spaces for your battleship"
                         placeCount -= 1
+                    } else {
+                        let ac = UIAlertController(title: "Incorrect Ship Placement", message: "Ships cannot span multiple rows when placed horizontally", preferredStyle: .alert)
+                        ac.addAction(UIAlertAction(title: "OK", style: .default))
+                        present(ac, animated: true)
                     }
                 }
                 else if ((userState[first!+10] == 1) && (userState[first!+20] == 1) && (userState[first!+30] == 1) && (userState[first!+40] == 1)){
@@ -121,7 +134,15 @@ class GameViewController: UIViewController, MCSessionDelegate, MCBrowserViewCont
                     }
                     placingLabel.text = "Select 4 spaces for your battleship"
                     placeCount -= 1
+                } else {
+                    let ac = UIAlertController(title: "Incorrect Ship Placement", message: "Ships must be placed consecutively either horizontally or vertically", preferredStyle: .alert)
+                    ac.addAction(UIAlertAction(title: "OK", style: .default))
+                    present(ac, animated: true)
                 }
+            } else {
+                let ac = UIAlertController(title: "Incorrect Ship Placement", message: "Select 5 spaces in a horizontal or vertical line for your carrier", preferredStyle: .alert)
+                ac.addAction(UIAlertAction(title: "OK", style: .default))
+                present(ac, animated: true)
             }
         }
         else if (placeCount == 6) { //place battleship
@@ -139,6 +160,10 @@ class GameViewController: UIViewController, MCSessionDelegate, MCBrowserViewCont
                         }
                         placingLabel.text = "Select 3 spaces for your cruiser"
                         placeCount -= 1
+                    } else {
+                        let ac = UIAlertController(title: "Incorrect Ship Placement", message: "Ships cannot span multiple rows when placed horizontally", preferredStyle: .alert)
+                        ac.addAction(UIAlertAction(title: "OK", style: .default))
+                        present(ac, animated: true)
                     }
                 }
                 else if ((userState[first!+10] == 1) && (userState[first!+20] == 1) && (userState[first!+30] == 1)){
@@ -150,7 +175,15 @@ class GameViewController: UIViewController, MCSessionDelegate, MCBrowserViewCont
                     }
                     placingLabel.text = "Select 3 spaces for your cruiser"
                     placeCount -= 1
+                } else {
+                    let ac = UIAlertController(title: "Incorrect Ship Placement", message: "Ships must be placed consecutively either horizontally or vertically", preferredStyle: .alert)
+                    ac.addAction(UIAlertAction(title: "OK", style: .default))
+                    present(ac, animated: true)
                 }
+            } else {
+                let ac = UIAlertController(title: "Incorrect Ship Placement", message: "Select 4 spaces in a horizontal or vertical line for your battleship", preferredStyle: .alert)
+                ac.addAction(UIAlertAction(title: "OK", style: .default))
+                present(ac, animated: true)
             }
         }
         else if ((placeCount == 5) || (placeCount == 4)) { //place cruiser or submarine
@@ -172,6 +205,10 @@ class GameViewController: UIViewController, MCSessionDelegate, MCBrowserViewCont
                             placingLabel.text = "Select 2 spaces for your destroyer"
                         }
                         placeCount -= 1
+                    } else {
+                        let ac = UIAlertController(title: "Incorrect Ship Placement", message: "Ships cannot span multiple rows when placed horizontally", preferredStyle: .alert)
+                        ac.addAction(UIAlertAction(title: "OK", style: .default))
+                        present(ac, animated: true)
                     }
                 }
                 else if ((userState[first!+10] == 1) && (userState[first!+20] == 1)){
@@ -187,10 +224,24 @@ class GameViewController: UIViewController, MCSessionDelegate, MCBrowserViewCont
                         placingLabel.text = "Select 2 spaces for your destroyer"
                     }
                     placeCount -= 1
+                } else {
+                    let ac = UIAlertController(title: "Incorrect Ship Placement", message: "Ships must be placed consecutively either horizontally or vertically", preferredStyle: .alert)
+                    ac.addAction(UIAlertAction(title: "OK", style: .default))
+                    present(ac, animated: true)
                 }
+            } else {
+                var msg = ""
+                if placeCount == 5 {
+                    msg = "Select 3 spaces in a horizontal or vertical line for your cruiser"
+                } else {
+                    msg = "Select 3 spaces in a horizontal or vertical line for your submarine"
+                }
+                let ac = UIAlertController(title: "Incorrect Ship Placement", message: msg, preferredStyle: .alert)
+                ac.addAction(UIAlertAction(title: "OK", style: .default))
+                present(ac, animated: true)
             }
         }
-        else if (placeCount == 3) { //place cruiser or submarine
+        else if (placeCount == 3) { //place destroyer
             if (selectedSpaces == 2) { //right amount of places selected
                 let first = userState.firstIndex(of: 1)
                 if (userState[first!+1] == 1){
@@ -205,6 +256,10 @@ class GameViewController: UIViewController, MCSessionDelegate, MCBrowserViewCont
                         }
                         placingLabel.text = "All ships placed. Press OK"
                         placeCount -= 1
+                    } else {
+                        let ac = UIAlertController(title: "Incorrect Ship Placement", message: "Ships cannot span multiple rows when placed horizontally", preferredStyle: .alert)
+                        ac.addAction(UIAlertAction(title: "OK", style: .default))
+                        present(ac, animated: true)
                     }
                 }
                 else if (userState[first!+10] == 1){
@@ -215,7 +270,15 @@ class GameViewController: UIViewController, MCSessionDelegate, MCBrowserViewCont
                     }
                     placingLabel.text = "All ships placed. Press OK"
                     placeCount -= 1
+                } else {
+                    let ac = UIAlertController(title: "Incorrect Ship Placement", message: "Ships must be placed consecutively either horizontally or vertically", preferredStyle: .alert)
+                    ac.addAction(UIAlertAction(title: "OK", style: .default))
+                    present(ac, animated: true)
                 }
+            } else {
+                let ac = UIAlertController(title: "Incorrect Ship Placement", message: "Select 2 spaces in a horizontal or vertical line for your destroyer", preferredStyle: .alert)
+                ac.addAction(UIAlertAction(title: "OK", style: .default))
+                present(ac, animated: true)
             }
         }
         else if (placeCount == 2) {
@@ -252,7 +315,7 @@ class GameViewController: UIViewController, MCSessionDelegate, MCBrowserViewCont
             start = true
             placeCount -= 1
         } else if (placeCount == 0) {
-            // TODO: player whose turn it is, make 5 attacks then send result to opponent
+            // DONE: player whose turn it is, make 5 attacks then send result to opponent
             if myTurn {
                 // pick 5 spots to attack
                 var selectedSpaces = 0
@@ -267,14 +330,27 @@ class GameViewController: UIViewController, MCSessionDelegate, MCBrowserViewCont
                     }
                 }
                 if selectedSpaces == 5 {
+                    if prevAttacks != [0, 0, 0, 0, 0] {
+                        for space in prevAttacks {
+                            if userAttacks[space] == 4 {
+                                userAttacks[space] = 2
+                            } else if userAttacks[space] == 5 {
+                                userAttacks[space] = 3
+                            }
+                        }
+                    }
                     // check for hit/miss
                     for i in 0..<attacks.count {
                         if oppState[attacks[i]] == 2 {
                             // hit
-                            userAttacks[attacks[i]] = 2
+//                            userAttacks[attacks[i]] = 2
+                            userAttacks[attacks[i]] = 4
+                            hits += 1
                         } else if oppState[attacks[i]] == 0 {
                             // miss
-                            userAttacks[attacks[i]] = 3
+//                            userAttacks[attacks[i]] = 3
+                            userAttacks[attacks[i]] = 5
+                            misses += 1
                         }
                     }
                     myView = true
@@ -283,8 +359,14 @@ class GameViewController: UIViewController, MCSessionDelegate, MCBrowserViewCont
                     if sendData(dictionaryWithData: dict) == false{
                         print("attacks failed to send")
                     }
+                    prevAttacks = attacks
                     attacks = [0, 0, 0, 0, 0]
+                    selectedAttacks = 0
                     swapTurn(whosTurn: false)
+                } else {
+                    let ac = UIAlertController(title: "Incorrect Number of Attacks", message: "Select exactly 5 spaces to attack", preferredStyle: .alert)
+                    ac.addAction(UIAlertAction(title: "OK", style: .default))
+                    self.present(ac, animated: true)
                 }
             }
         } else if (placeCount == -1) {
@@ -312,9 +394,17 @@ class GameViewController: UIViewController, MCSessionDelegate, MCBrowserViewCont
                     } else if userAttacks[i] == 3 {
                         // state: miss
                         tmpButton.setTitle("x", for: .normal)
-                        tmpButton.setTitleColor(UIColor.gray, for: .normal)
+                        tmpButton.setTitleColor(UIColor.darkGray, for: .normal)
                     } else if userAttacks[i] == 0 {
                         tmpButton.setTitle("", for: .normal)
+                    } else if userAttacks[i] == 4 {
+                        tmpButton.backgroundColor = UIColor.lightGray
+                        tmpButton.setTitle("x", for: .normal)
+                        tmpButton.setTitleColor(UIColor.red, for: .normal)
+                    } else if userAttacks[i] == 5 {
+                        tmpButton.backgroundColor = UIColor.lightGray
+                        tmpButton.setTitle("x", for: .normal)
+                        tmpButton.setTitleColor(UIColor.darkGray, for: .normal)
                     }
                 }
             } else {
@@ -336,7 +426,15 @@ class GameViewController: UIViewController, MCSessionDelegate, MCBrowserViewCont
                     } else if userState[i] == 4 {
                         tmpButton.backgroundColor = UIColor.white
                         tmpButton.setTitle("x", for: .normal)
-                        tmpButton.setTitleColor(UIColor.gray, for: .normal)
+                        tmpButton.setTitleColor(UIColor.darkGray, for: .normal)
+                    } else if userState[i] == 5 {
+                        tmpButton.backgroundColor = UIColor.lightGray
+                        tmpButton.setTitle("x", for: .normal)
+                        tmpButton.setTitleColor(UIColor.red, for: .normal)
+                    } else if userState[i] == 6 {
+                        tmpButton.backgroundColor = UIColor.lightGray
+                        tmpButton.setTitle("x", for: .normal)
+                        tmpButton.setTitleColor(UIColor.darkGray, for: .normal)
                     }
                 }
             }
@@ -345,18 +443,20 @@ class GameViewController: UIViewController, MCSessionDelegate, MCBrowserViewCont
     
     func swapTurn(whosTurn: Bool) {
         if whosTurn {
-            placingLabel.text = "Turn: Yours"
+            placingLabel.text = "Turn: Yours (\(selectedAttacks)/5)"
             myTurn = true
+            actionButton.isHidden = false
         } else {
             placingLabel.text = "Turn: Opponent's"
             myTurn = false
+            actionButton.isHidden = true
         }
     }
     
     func checkForWin() {
         let check = userState.firstIndex(of: 2)
         if check == nil { // win
-            // TODO: handle victory
+            // DONE: handle victory
             titleLabel.text = "Game Over"
             placingLabel.text = "Winner: Opponent"
 //            oppReady = false
@@ -372,6 +472,9 @@ class GameViewController: UIViewController, MCSessionDelegate, MCBrowserViewCont
             present(ac, animated: true)
             placeCount -= 1
             actionButton.setTitle("Finish", for: .normal)
+            print("hits: \(hits)")
+            print("misses: \(misses)")
+            print("hitrate: \(100*hits/(hits + misses))")
         }
     }
     
@@ -408,7 +511,10 @@ class GameViewController: UIViewController, MCSessionDelegate, MCBrowserViewCont
         case MCSessionState.notConnected:
             print("Not Connected: \(peerID.displayName)")
             DispatchQueue.main.async {
-                // TODO: do something if we get disconnected from the opponent
+                // TODO: If disconnected from opponent, alert user and return to start page
+                let ac = UIAlertController(title: "Lost Connection to Opponent", message: "The connection to your opponent was lost. Returning to the starting page", preferredStyle: .alert)
+                ac.addAction(UIAlertAction(title: "OK", style: .default))
+                self.present(ac, animated: true)
             }
         @unknown default:
             print("Unknown case")
@@ -416,14 +522,12 @@ class GameViewController: UIViewController, MCSessionDelegate, MCBrowserViewCont
     }
     
     func session(_ session: MCSession, didReceive data: Data, fromPeer peerID: MCPeerID) {
-//        self.recMsg = NSString(data: data as Data, encoding: String.Encoding.utf8.rawValue)! as String
-//        self.chatTextView.text = self.chatTextView.text+self.recMsg
-        print("Received from: \(peerID.displayName)")
+//        print("Received from: \(peerID.displayName)")
         DispatchQueue.main.async {
             
             do {
                 let dataDictionary = try NSKeyedUnarchiver.unarchiveTopLevelObjectWithData(data) as? Dictionary<String,AnyObject>
-    //            let oppVal = dataDictionary!["randVal"]
+
                 if ((dataDictionary?["randVal"]) != nil){
                     if self.randVal < dataDictionary?["randVal"] as! Int { //opponent turn
                         //let opponent know it is their turn
@@ -474,18 +578,30 @@ class GameViewController: UIViewController, MCSessionDelegate, MCBrowserViewCont
                     self.oppReady = true
                 } else if (dataDictionary?["attacks"] != nil) {
                     self.oppAttacks = dataDictionary?["attacks"] as! [Int]
+                    if self.prevOppAttacks != [0, 0, 0, 0, 0] {
+                        for space in self.prevOppAttacks {
+                            if self.userState[space] == 5 {
+                                self.userState[space] = 3
+                            } else if self.userState[space] == 6 {
+                                self.userState[space] = 4
+                            }
+                        }
+                    }
                     for space in self.oppAttacks {
                         if self.userState[space] == 2 {
                             // hit
-                            self.userState[space] = 3
+//                            self.userState[space] = 3
+                            self.userState[space] = 5
                         } else if self.userState[space] == 0 {
                             // miss
-                            self.userState[space] = 4
+//                            self.userState[space] = 4
+                            self.userState[space] = 6
                         }
                     }
                     self.myView = false
                     self.switch_view_action((Any).self)
                     self.swapTurn(whosTurn: true)
+                    self.prevOppAttacks = self.oppAttacks
                     self.oppAttacks = [0, 0, 0, 0, 0]
                     self.checkForWin()
                 } else if (dataDictionary?["winner"] != nil) {
@@ -496,11 +612,15 @@ class GameViewController: UIViewController, MCSessionDelegate, MCBrowserViewCont
                         self.myTurn = false
                         self.myView = true
                         self.switch_view_action((Any).self)
+                        self.actionButton.isHidden = false
                         let ac = UIAlertController(title: "Winner: You!", message: "You won the game, nice job!", preferredStyle: .alert)
                         ac.addAction(UIAlertAction(title: "OK", style: .default))
                         self.present(ac, animated: true)
                         self.placeCount -= 1
                         self.actionButton.setTitle("Finish", for: .normal)
+                        print("hits: \(self.hits)")
+                        print("misses: \(self.misses)")
+                        print("hitrate: \(100*self.hits/(self.hits + self.misses))")
                     }
                 }
             } catch let error as NSError {

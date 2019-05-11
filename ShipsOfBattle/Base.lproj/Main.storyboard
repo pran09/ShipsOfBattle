@@ -158,7 +158,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="- Sink all of your opponent's ships" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZDE-cv-T2p">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="- Each player places 5 ships on the grid: carrier, battleship, cruiser, submarine, and destroyer" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZDE-cv-T2p">
                                 <rect key="frame" x="16" y="237" width="343" height="71"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="71" id="vHx-av-HDZ"/>
@@ -167,7 +167,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="- Each player places all ships on the grid" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jzu-So-5Yb">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="- Take turns firing 5 shots (using the &quot;Your Attacks&quot; view) at your opponent's ships" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jzu-So-5Yb">
                                 <rect key="frame" x="16" y="316" width="343" height="71"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="71" id="b8i-wj-5BP"/>
@@ -176,7 +176,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="- Take turns firing 5 shots at your opponent's ships" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P5k-Wf-GYZ">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="- Red &quot;x&quot; signals a hit, grey &quot;x&quot; signals a miss" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P5k-Wf-GYZ">
                                 <rect key="frame" x="16" y="395" width="343" height="71"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="71" id="2Ib-Mv-Unt"/>
@@ -185,7 +185,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="- Red &quot;x&quot; signals a hit, grey &quot;x&quot; signals a miss" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Gc-1R-xJU">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="- Spaces shaded in gray show the previous round of attacks" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Gc-1R-xJU">
                                 <rect key="frame" x="16" y="474" width="343" height="71"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="71" id="X7X-7k-hAJ"/>
@@ -2380,6 +2380,6 @@
         <image name="grid_10x10_white.jpg" width="250" height="250"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="AGb-Bk-TFP"/>
+        <segue reference="mAU-6X-OC8"/>
     </inferredMetricsTieBreakers>
 </document>

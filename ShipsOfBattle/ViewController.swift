@@ -41,6 +41,7 @@ class ViewController: UIViewController, MCSessionDelegate, MCBrowserViewControll
             gvc.mcSession = mcSession
             gvc.mcAdvertiserAssistant = mcAdvertiserAssistant
             gvc.randVal = randVal
+//            self.mcAdvertiserAssistant.stop()
         }
     }
     
@@ -78,6 +79,7 @@ class ViewController: UIViewController, MCSessionDelegate, MCBrowserViewControll
             disconnectActionSheet.addAction(UIAlertAction(title: "Disconnect", style: .destructive, handler: {
                 (action:UIAlertAction) in
                 self.mcSession.disconnect()
+                self.mcAdvertiserAssistant.stop()
                 self.startButton.isHidden = true
                 self.textLabel.text = "Connect to another user"
             }))

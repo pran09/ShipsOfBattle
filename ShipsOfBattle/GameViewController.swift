@@ -24,6 +24,7 @@ class GameViewController: UIViewController, MCSessionDelegate, MCBrowserViewCont
     @IBOutlet var turnLabel: UILabel!
     @IBOutlet var switchButton: UIButton!
     @IBOutlet var actionButton: UIButton!
+    @IBOutlet var statButton: UIButton!
     var placeCount = 7
     var selectedAttacks = 0
     var myTurn = false
@@ -32,7 +33,6 @@ class GameViewController: UIViewController, MCSessionDelegate, MCBrowserViewCont
     var oppReady = false
     var hits = 0
     var misses = 0
-    var hitRate = 0.0
     var userState = Array(repeating: 0, count: 100)
     var oppState = Array(repeating: 0, count: 100)
     var userAttacks = Array(repeating: 0, count: 100)
@@ -86,11 +86,22 @@ class GameViewController: UIViewController, MCSessionDelegate, MCBrowserViewCont
 //            view.showsFPS = true
 //            view.showsNodeCount = true
 //        }
+        self.statButton.isEnabled = false
+        self.statButton.isHidden = true
         self.turnLabel.isHidden = true
         self.switchButton.isHidden = true
         mcSession.delegate = self
         print("Connected peers: \(mcSession.connectedPeers)")
         print("PeerID: \(String(describing: peerID))")
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let svc = segue.destination as? StatsViewController {
+            // send connection info upon segue to StatsViewController
+            svc.hits = hits
+            svc.misses = misses
+            svc.hitRate = 100*hits/(hits + misses)
+        }
     }
 
     override var shouldAutorotate: Bool {
@@ -372,6 +383,10 @@ class GameViewController: UIViewController, MCSessionDelegate, MCBrowserViewCont
         } else if (placeCount == -1) {
             // TODO: Gather and send stats to be sent to stats viewController
             // TODO: link to stats viewController
+//            let storyboard: UIStoryboard! = self.storyboard
+////            let storyboard = UIStoryboard(name: "StatsController", bundle: nil)
+//            let controller = storyboard.instantiateViewController(withIdentifier: "StatsViewController")
+//            self.present(controller, animated: true, completion: nil)
         }
     }
     @IBAction func switch_view_action(_ sender: Any) {
@@ -471,10 +486,11 @@ class GameViewController: UIViewController, MCSessionDelegate, MCBrowserViewCont
             ac.addAction(UIAlertAction(title: "OK", style: .default))
             present(ac, animated: true)
             placeCount -= 1
-            actionButton.setTitle("Finish", for: .normal)
-            print("hits: \(hits)")
-            print("misses: \(misses)")
-            print("hitrate: \(100*hits/(hits + misses))%")
+//            actionButton.setTitle("Stats", for: .normal)
+            actionButton.isHidden = true
+            actionButton.isEnabled = false
+            statButton.isEnabled = true
+            statButton.isHidden = false
         }
     }
     
@@ -513,7 +529,11 @@ class GameViewController: UIViewController, MCSessionDelegate, MCBrowserViewCont
             DispatchQueue.main.async {
                 // TODO: If disconnected from opponent, alert user and return to start page
                 let ac = UIAlertController(title: "Lost Connection to Opponent", message: "The connection to your opponent was lost. Returning to the starting page", preferredStyle: .alert)
-                ac.addAction(UIAlertAction(title: "OK", style: .default))
+                ac.addAction(UIAlertAction(title: "OK", style: .default, handler: { (Void) in
+                    let storyboard: UIStoryboard! = self.storyboard
+                    let controller = storyboard.instantiateViewController(withIdentifier: "StartViewController")
+                    self.present(controller, animated: true, completion: nil)
+                }))
                 self.present(ac, animated: true)
             }
         @unknown default:
@@ -617,10 +637,10 @@ class GameViewController: UIViewController, MCSessionDelegate, MCBrowserViewCont
                         ac.addAction(UIAlertAction(title: "OK", style: .default))
                         self.present(ac, animated: true)
                         self.placeCount -= 1
-                        self.actionButton.setTitle("Finish", for: .normal)
-                        print("hits: \(self.hits)")
-                        print("misses: \(self.misses)")
-                        print("hitrate: \(100*self.hits/(self.hits + self.misses))%")
+                        self.actionButton.isHidden = true
+                        self.actionButton.isEnabled = false
+                        self.statButton.isEnabled = true
+                        self.statButton.isHidden = false
                     }
                 }
             } catch let error as NSError {

@@ -19,6 +19,7 @@
 		720B101D22712FDB00CB2CB9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 720B101B22712FDB00CB2CB9 /* LaunchScreen.storyboard */; };
 		720B102822712FDC00CB2CB9 /* ShipsOfBattleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 720B102722712FDC00CB2CB9 /* ShipsOfBattleTests.swift */; };
 		720B103322712FDC00CB2CB9 /* ShipsOfBattleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 720B103222712FDC00CB2CB9 /* ShipsOfBattleUITests.swift */; };
+		72117C75228C9DAF00E61EF0 /* StatsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72117C74228C9DAF00E61EF0 /* StatsViewController.swift */; };
 		72E0F6E1227CBB93001721AB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72E0F6E0227CBB93001721AB /* ViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -58,6 +59,7 @@
 		720B102E22712FDC00CB2CB9 /* ShipsOfBattleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ShipsOfBattleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		720B103222712FDC00CB2CB9 /* ShipsOfBattleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShipsOfBattleUITests.swift; sourceTree = "<group>"; };
 		720B103422712FDC00CB2CB9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		72117C74228C9DAF00E61EF0 /* StatsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsViewController.swift; sourceTree = "<group>"; };
 		72E0F6E0227CBB93001721AB /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -121,6 +123,7 @@
 				720B101922712FDB00CB2CB9 /* Assets.xcassets */,
 				720B101B22712FDB00CB2CB9 /* LaunchScreen.storyboard */,
 				720B101E22712FDB00CB2CB9 /* Info.plist */,
+				72117C74228C9DAF00E61EF0 /* StatsViewController.swift */,
 			);
 			path = ShipsOfBattle;
 			sourceTree = "<group>";
@@ -281,6 +284,7 @@
 				720B101322712FD800CB2CB9 /* GameScene.swift in Sources */,
 				720B101522712FD800CB2CB9 /* GameViewController.swift in Sources */,
 				72E0F6E1227CBB93001721AB /* ViewController.swift in Sources */,
+				72117C75228C9DAF00E61EF0 /* StatsViewController.swift in Sources */,
 				720B100D22712FD800CB2CB9 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

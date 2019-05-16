@@ -41,7 +41,6 @@ class ViewController: UIViewController, MCSessionDelegate, MCBrowserViewControll
             gvc.mcSession = mcSession
             gvc.mcAdvertiserAssistant = mcAdvertiserAssistant
             gvc.randVal = randVal
-//            self.mcAdvertiserAssistant.stop()
         }
     }
     
@@ -106,6 +105,9 @@ class ViewController: UIViewController, MCSessionDelegate, MCBrowserViewControll
             print("Connected: \(peerID.displayName)")
             DispatchQueue.main.async {
                 self.changeView(hide: false)
+                if self.mcAdvertiserAssistant != nil {
+                    self.mcAdvertiserAssistant.stop()
+                }
             }
         case MCSessionState.connecting:
             print("Connecting: \(peerID.displayName)")
